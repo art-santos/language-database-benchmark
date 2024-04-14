@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { Context } from 'hono'
+import { sum } from './functions/sum'
 
 const app = new Hono()
 
@@ -11,8 +12,14 @@ app.use(async (c: Context, next) => {
 })
 
 app.get('/', (c) => {
+  console.time('Hello Hono!')
+  let j = 0
+  for (let i = 0; i < 15; i++) {
+    j += sum(i, j)
+  }
   console.log('Hello Hono!', c)
-  return c.text('Hello Hono!')
+  console.timeEnd('Hello Hono!')
+  return c.text(`Hello Hono! ${j}`)
 })
 
 export default app
