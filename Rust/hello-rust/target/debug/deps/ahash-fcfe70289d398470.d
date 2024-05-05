@@ -1,0 +1,10 @@
+/Users/arthursantos/Desktop/learning/ruby/ruby-on-rails/Rust/hello-rust/target/debug/deps/libahash-fcfe70289d398470.rmeta: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/convert.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/fallback_hash.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/operations.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/random_state.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/specialize.rs
+
+/Users/arthursantos/Desktop/learning/ruby/ruby-on-rails/Rust/hello-rust/target/debug/deps/ahash-fcfe70289d398470.d: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/convert.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/fallback_hash.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/operations.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/random_state.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/specialize.rs
+
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/lib.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/convert.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/fallback_hash.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/operations.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/random_state.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ahash-0.8.11/src/specialize.rs:

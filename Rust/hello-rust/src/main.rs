@@ -1,8 +1,9 @@
-mod house;
+mod database;
 
-use house::{living_room, bedroom};
-fn main() {
-    living_room::watch_tv();
-    bedroom::watch_tv();
-    println!("The value of x is");
+use database::embeded_database;
+
+
+#[tokio::main]
+async fn main() {     
+    embeded_database::embeded_database().await
 }

@@ -1,0 +1,9 @@
+/Users/arthursantos/Desktop/learning/ruby/ruby-on-rails/Rust/hello-rust/target/debug/deps/libtokio_rustls-258a78a475888cfc.rmeta: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/client.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/common/mod.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/common/handshake.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/server.rs
+
+/Users/arthursantos/Desktop/learning/ruby/ruby-on-rails/Rust/hello-rust/target/debug/deps/tokio_rustls-258a78a475888cfc.d: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/client.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/common/mod.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/common/handshake.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/server.rs
+
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/lib.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/client.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/common/mod.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/common/handshake.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.25.0/src/server.rs:
