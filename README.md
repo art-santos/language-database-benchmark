@@ -10,6 +10,10 @@ This is a ranking of popular databases based on their features and community sup
 
 3. [Neon](https://neondb.com) - A scalable and distributed database designed for modern applications.
 
+4. [Cloudflare D1](https://cloudflare.com/d1) - A cloud-based database with global distribution and advanced security features.
+
+5. [Planetscale](https://planetscale.com) - A horizontally scalable database built for developers with a focus on simplicity and ease of use.
+
 ## Programming Languages
 - TypeScript
 - Gleam
@@ -18,6 +22,7 @@ This is a ranking of popular databases based on their features and community sup
 - Python
 - Ruby on Rails
 - Rails
+
 
 ## Database and Language Checklist
 - Turso
@@ -37,6 +42,22 @@ This is a ranking of popular databases based on their features and community sup
     - [ ] Ruby on Rails
     - [ ] Rails
 - Neon
+    - [ ] TypeScript
+    - [ ] Gleam
+    - [ ] Go
+    - [ ] Rust
+    - [ ] Python
+    - [ ] Ruby on Rails
+    - [ ] Rails
+- Cloudflare D1
+    - [ ] TypeScript
+    - [ ] Gleam
+    - [ ] Go
+    - [ ] Rust
+    - [ ] Python
+    - [ ] Ruby on Rails
+    - [ ] Rails
+- Planetscale
     - [ ] TypeScript
     - [ ] Gleam
     - [ ] Go
