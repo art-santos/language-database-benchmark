@@ -1,10 +1,29 @@
 package database
 
+import (
+	"log"
+	"os"
+
+	"github.com/joho/godotenv"
+)
+
 type Database struct {
 	// Define your database struct fields here
 }
 
 func NewDatabase() *Database {
+
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+
+	url := os.Getenv("TURSO_DATABASE_URL")
+	log.Println("TURSO DATABASE:", url)
+
+	token := os.Getenv("TURSO_AUTH_TOKEN")
+	log.Println("TURSO TOKEN:", token)
+
 	// Implement your database initialization logic here
 	return &Database{}
 }
