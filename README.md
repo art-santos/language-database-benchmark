@@ -28,7 +28,7 @@ This is a ranking of popular databases based on their features and community sup
 - Turso
     - [ ] TypeScript
     - [ ] Gleam
-    - [ ] Go
+    - [x] Go
     - [x] Rust
     - [ ] Python
     - [ ] Ruby on Rails

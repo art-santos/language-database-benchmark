@@ -10,14 +10,13 @@
 # Ignore all environment files (except templates).
 /.env*
 !/.env*.erb
-.DS_Store
 
-**/.DS_Store
 
 */.DS_Store
 ./.DS_Store
 /.DS_Store
-
+# Ignore .DS_Store files.
+**/.DS_Store
 
 
 # Ignore all environment files (except templates) in subfolders.
