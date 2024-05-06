@@ -1,14 +1,31 @@
 package database
 
 import (
+	"database/sql"
+	"fmt"
 	"log"
 	"os"
+	"time"
 
 	"github.com/joho/godotenv"
+	_ "github.com/tursodatabase/libsql-client-go/libsql"
 )
 
 type Database struct {
 	// Define your database struct fields here
+}
+
+type User struct {
+	ID   int
+	Name string
+}
+
+func createUser(db *sql.DB) {
+	_, err := db.Exec("INSERT INTO users (email) VALUES ('John')")
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "failed to execute query: %v\n", err)
+		os.Exit(1)
+	}
 }
 
 func NewDatabase() *Database {
@@ -24,37 +41,28 @@ func NewDatabase() *Database {
 	token := os.Getenv("TURSO_AUTH_TOKEN")
 	log.Println("TURSO TOKEN:", token)
 
+	conn := fmt.Sprintf("%s?authToken=%s", url, token)
+
+	log.Println("Connecting to database:", conn)
+
 	// Implement your database initialization logic here
+
+	db, err := sql.Open("libsql", conn)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "failed to open db %s: %s", url, err)
+		os.Exit(1)
+		log.Fatal(err)
+	}
+
+	//Measuring the time it takes to connect to the database
+
+	start := time.Now()
+	createUser(db)
+	elapsed := time.Since(start)
+	log.Printf("Time taken to execute createUser: %s", elapsed)
+
+	log.Println("Connected to database")
+	defer db.Close()
+
 	return &Database{}
-}
-
-func (db *Database) Connect() error {
-	// Implement your database connection logic here
-	return nil
-}
-
-func (db *Database) Disconnect() error {
-	// Implement your database disconnection logic here
-	return nil
-}
-
-func (db *Database) Query(query string) ([]map[string]interface{}, error) {
-	// Implement your database query logic here
-	return nil, nil
-}
-
-// Add more methods as needed
-func (db *Database) Insert(data map[string]interface{}) error {
-	// Implement your database insert logic here
-	return nil
-}
-
-func (db *Database) Update(query string, data map[string]interface{}) error {
-	// Implement your database update logic here
-	return nil
-}
-
-func (db *Database) Delete(query string) error {
-	// Implement your database delete logic here
-	return nil
 }
