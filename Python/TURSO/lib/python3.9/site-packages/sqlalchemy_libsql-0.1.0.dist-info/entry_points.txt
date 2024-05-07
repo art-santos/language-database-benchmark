@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+sqlite.libsql=sqlalchemy_libsql:SQLiteDialect_libsql
+
