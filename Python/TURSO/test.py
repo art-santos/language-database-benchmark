@@ -4,13 +4,8 @@ import random, os
 os.system('mode con: cols=25 lines=8')
 
 races = {
-    'White' : '#ffdbaf',
-    'Irish' : '#fff2e2',
-    'Black' : '#756046',
-    'African' :'#443421',
-    'Asian' : '#ffe8b2',
-    'Hispanic' : '#edb86f',
-    'Indian' : '#997138',
+   
+    'Thanos' : '#85238e',
     }
 
 racename, racevalue = random.choice(list(races.items()))
