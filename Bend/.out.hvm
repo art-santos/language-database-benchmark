@@ -1,0 +1,13 @@
+@Tree/Leaf = (* (a a))
+
+@Tree/Node = (a (b (c ((a (b (c d))) (* d)))))
+
+@Tree/gen = (?(((* @Tree/Leaf) @Tree/gen__C0) a) a)
+
+@Tree/gen__C0 = ({b e} ({a {$([*2] $([+1] c)) $([*2] $([+2] f))}} h))
+  & @Tree/Node ~ (a (d (g h)))
+  &! @Tree/gen ~ (b (c d))
+  &! @Tree/gen ~ (e (f g))
+
+@main = a
+  & @Tree/gen ~ (4 (1 a))
