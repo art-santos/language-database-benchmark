@@ -1,0 +1,10 @@
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/metal-rs/target/debug/deps/libcocoa-2ccba550b1006912.rmeta: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/appkit.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/base.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/foundation.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/quartzcore.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/macros.rs
+
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/metal-rs/target/debug/deps/cocoa-2ccba550b1006912.d: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/appkit.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/base.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/foundation.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/quartzcore.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/macros.rs
+
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/lib.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/appkit.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/base.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/foundation.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/quartzcore.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cocoa-0.25.0/src/macros.rs:

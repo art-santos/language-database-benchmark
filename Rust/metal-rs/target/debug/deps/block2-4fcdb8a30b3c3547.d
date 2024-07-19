@@ -1,0 +1,10 @@
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/metal-rs/target/debug/deps/libblock2-4fcdb8a30b3c3547.rmeta: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/block.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/concrete_block.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/debug.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/global.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/rc_block.rs
+
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/metal-rs/target/debug/deps/block2-4fcdb8a30b3c3547.d: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/block.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/concrete_block.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/debug.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/global.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/rc_block.rs
+
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/lib.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/block.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/concrete_block.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/debug.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/global.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/block2-0.3.0/src/rc_block.rs:

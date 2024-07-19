@@ -1,0 +1,3 @@
+cargo:rerun-if-changed=shader_types
+cargo:rerun-if-changed=shaders.metal
+cargo:rerun-if-changed=shader_types.h
