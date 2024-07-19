@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wasm Benchmark</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>Wasm Benchmark</h1>
+    <p>Open the console to see the results.</p>
+    <script type="module">
+                import init, {add} from './pkg/wasm_benchmark.js';
+
+                await init();
+
+                console.log(add(1, 7));
+    </script>
+  </body>
+</html>
+ 
