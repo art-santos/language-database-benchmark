@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="module">
+import { add, greet } from "./build/release.js";
+// document.body.innerText = add(1, 2);
+// document.body.innerText = greet("World");
+// 
+    //ADD BUTTON TO HTML
+    var button = document.createElement("button");
+    var section = document.createElement("section");
+    button.innerHTML = "Click me";
+
+
+    document.body.appendChild(button);
+    button.addEventListener("click", function() {
+        document.body.innerText = add(1, 2);
+    });
+
+    //ADD BUTTON TO HTML
+    var button2 = document.createElement("button");
+    var section = document.createElement("section");
+    button2.innerHTML = "Click me";
+    document.body.appendChild(button2);
+    button2.addEventListener("click", function() {
+        document.body.innerText = greet("World");
+    });
+
+</script>
+</head>
+<body></body>
+</html>
