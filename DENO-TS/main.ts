@@ -1,11 +1,14 @@
+
 import { fetchSite } from './api/fetch-deno.ts';
 
+const library = Deno.dlopen("./target/debug/libmy_library.dylib", {
+    add: {
+        parameters: ["f64", "f64"],
+        result: "f64",
+    },
+})
 
-const add = async (a: number, b: number): Promise<number> => {  
 
-    const site = await fetchSite('https://www.deno.com');
-    console.log(site);
-  return a + b;
-};
+const result = library.symbols.add(1.0, 2.0);
 
-console.log(add(5, 10)); // 15
+console.log(result);
