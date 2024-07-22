@@ -1,0 +1,11 @@
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/calculator/target/debug/deps/libprost-a7c70549d27a7837.rmeta: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/error.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/message.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/name.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/types.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/encoding.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/../README.md
+
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/calculator/target/debug/deps/prost-a7c70549d27a7837.d: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/error.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/message.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/name.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/types.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/encoding.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/../README.md
+
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/lib.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/error.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/message.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/name.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/types.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/encoding.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/prost-0.13.1/src/../README.md:
