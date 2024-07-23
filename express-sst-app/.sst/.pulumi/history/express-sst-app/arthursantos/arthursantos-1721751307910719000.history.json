@@ -1,6 +1,6 @@
 {
     "kind": "update",
-    "startTime": 1721748724,
+    "startTime": 1721751173,
     "message": "chore: Add Express SST app files and configuration",
     "environment": {
         "exec.kind": "auto.local",
@@ -9,7 +9,7 @@
         "git.committer": "Arthur Santos",
         "git.committer.email": "arthursantosdeveloper@gmail.com",
         "git.dirty": "true",
-        "git.head": "dd7f2761b44e3f2f65f1cf305b1f9ad19868daf0",
+        "git.head": "ae2dc80097add0d0105d7e26ef2222ef8d6e5030",
         "git.headName": "refs/heads/master",
         "pulumi.arch": "arm64",
         "pulumi.env.PULUMI_CONFIG_PASSPHRASE": "set",
@@ -31,13 +31,13 @@
         "vcs.root": "express-sst-app/.sst"
     },
     "config": {
-        "aws:defaultTags": "{\"tags\":{\"sst:app\":\"express-sst-app\",\"sst:stage\":\"production\"}}",
+        "aws:defaultTags": "{\"tags\":{\"sst:app\":\"express-sst-app\",\"sst:stage\":\"arthursantos\"}}",
         "aws:region": "sa-east-1"
     },
     "version": 0,
     "result": "succeeded",
-    "endTime": 1721748764,
+    "endTime": 1721751307,
     "resourceChanges": {
-        "create": 1
+        "create": 33
     }
 }

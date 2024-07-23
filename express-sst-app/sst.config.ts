@@ -8,6 +8,21 @@ export default $config({
       home: "aws",
     };
   },
-  async run() {},
-});
+  async run() {
+    const vpc = new sst.aws.Vpc("MyVpc");
+  
+    const cluster = new sst.aws.Cluster("MyCluster", { vpc });
 
+    const bucket = new sst.aws.Bucket("MyBucket", {
+      public: true
+    });
+  
+    cluster.addService("MyService", {
+      public: {
+        ports: [
+          { listen: "80/http" },
+        ],
+      },
+      link: [bucket],
+    });
+  }});

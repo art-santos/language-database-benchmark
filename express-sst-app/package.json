@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" \u0026\u0026 exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sst dev \"node --watch index.mjs\""
   },
   "keywords": [],
@@ -11,7 +11,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.617.0",
+    "@aws-sdk/lib-storage": "^3.617.0",
+    "@aws-sdk/s3-request-presigner": "^3.617.0",
     "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
     "sst": "ion"
   },
   "devDependencies": {

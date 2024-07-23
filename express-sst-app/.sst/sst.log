@@ -1,38 +1,421 @@
-time=2024-07-23T12:31:58.098-03:00 level=INFO msg="checking for pulumi" path="/Users/arthursantos/Library/Application Support/sst/bin/pulumi"
-time=2024-07-23T12:31:58.395-03:00 level=INFO msg="checking for bun" path="/Users/arthursantos/Library/Application Support/sst/bin/bun"
-time=2024-07-23T12:31:58.415-03:00 level=INFO msg="initializing project" version=0.1.17
-time=2024-07-23T12:31:58.416-03:00 level=INFO msg="esbuild building" out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721748718416.mjs
-time=2024-07-23T12:31:58.455-03:00 level=INFO msg="esbuild built" outfile=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721748718416.mjs
-time=2024-07-23T12:31:58.455-03:00 level=INFO msg="evaluating config"
-time=2024-07-23T12:31:58.486-03:00 level=INFO msg="config evaluated"
-time=2024-07-23T12:31:58.487-03:00 level=INFO msg="checking platform"
-time=2024-07-23T12:31:58.487-03:00 level=INFO msg="checking provider" name=aws version=latest compare=latest
-time=2024-07-23T12:31:58.487-03:00 level=INFO msg="loading home"
-time=2024-07-23T12:31:58.488-03:00 level=INFO msg="credentials found"
-time=2024-07-23T12:31:58.488-03:00 level=INFO msg="fetching bootstrap"
-time=2024-07-23T12:31:58.627-03:00 level=INFO msg="creating bootstrap bucket" name=sst-asset-bcbsefhnkuwd
-time=2024-07-23T12:32:01.947-03:00 level=INFO msg="loaded config" app=express-sst-app stage=production
-time=2024-07-23T12:32:01.948-03:00 level=INFO msg="initializing ui" isTTY=true
-time=2024-07-23T12:32:01.949-03:00 level=INFO msg="running stack command" cmd=deploy
-time=2024-07-23T12:32:01.950-03:00 level=INFO msg="INFO locking app=express-sst-app stage=production"
-time=2024-07-23T12:32:01.950-03:00 level=INFO msg="INFO getting data key=lock app=express-sst-app stage=production"
-time=2024-07-23T12:32:02.055-03:00 level=INFO msg="INFO putting data key=lock app=express-sst-app stage=production"
-time=2024-07-23T12:32:02.157-03:00 level=INFO msg="INFO pulling state app=express-sst-app stage=production out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/.pulumi/stacks/express-sst-app/production.json"
-time=2024-07-23T12:32:02.266-03:00 level=INFO msg="INFO getting passphrase app=express-sst-app stage=production"
-time=2024-07-23T12:32:02.377-03:00 level=INFO msg="INFO passphrase not found, setting passphrase app=express-sst-app stage=production"
-time=2024-07-23T12:32:02.649-03:00 level=INFO msg="INFO getting data key=secret app=express-sst-app stage=production"
-time=2024-07-23T12:32:02.740-03:00 level=INFO msg="esbuild building" out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721748722740.mjs
-time=2024-07-23T12:32:02.776-03:00 level=INFO msg="esbuild built" outfile=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721748722740.mjs
-time=2024-07-23T12:32:02.776-03:00 level=INFO msg="tracked files"
-time=2024-07-23T12:32:02.889-03:00 level=INFO msg="built workspace"
-time=2024-07-23T12:32:04.024-03:00 level=INFO msg="built stack"
-time=2024-07-23T12:32:04.150-03:00 level=INFO msg="built config"
-time=2024-07-23T12:32:04.150-03:00 level=INFO msg="running stack command" cmd=deploy
-time=2024-07-23T12:32:45.030-03:00 level=INFO msg="done running stack command"
-time=2024-07-23T12:32:45.031-03:00 level=INFO msg="INFO putting summary app=express-sst-app stage=production"
-time=2024-07-23T12:32:45.031-03:00 level=INFO msg="INFO putting data key=summary app=express-sst-app stage=production/os4vf0ii41qgskuqxkd9hhyb"
-time=2024-07-23T12:32:45.171-03:00 level=INFO msg="parsing state"
-time=2024-07-23T12:32:45.396-03:00 level=INFO msg="INFO putting links app=express-sst-app stage=production"
-time=2024-07-23T12:32:45.397-03:00 level=INFO msg="done parsing state"
-time=2024-07-23T12:32:45.397-03:00 level=INFO msg="INFO pushing state app=express-sst-app stage=production from=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/.pulumi/stacks/express-sst-app/production.json"
-time=2024-07-23T12:32:45.554-03:00 level=INFO msg="INFO unlocking app=express-sst-app stage=production"
+time=2024-07-23T13:12:51.212-03:00 level=INFO msg="checking for pulumi" path="/Users/arthursantos/Library/Application Support/sst/bin/pulumi"
+time=2024-07-23T13:12:51.312-03:00 level=INFO msg="checking for bun" path="/Users/arthursantos/Library/Application Support/sst/bin/bun"
+time=2024-07-23T13:12:51.316-03:00 level=INFO msg="initializing project" version=0.1.17
+time=2024-07-23T13:12:51.317-03:00 level=INFO msg="esbuild building" out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721751171316.mjs
+time=2024-07-23T13:12:51.326-03:00 level=INFO msg="esbuild built" outfile=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721751171316.mjs
+time=2024-07-23T13:12:51.326-03:00 level=INFO msg="evaluating config"
+time=2024-07-23T13:12:51.352-03:00 level=INFO msg="config evaluated"
+time=2024-07-23T13:12:51.353-03:00 level=INFO msg="checking platform"
+time=2024-07-23T13:12:51.353-03:00 level=INFO msg="checking provider" name=aws version=latest compare=latest
+time=2024-07-23T13:12:51.353-03:00 level=INFO msg="loading home"
+time=2024-07-23T13:12:51.356-03:00 level=INFO msg="credentials found"
+time=2024-07-23T13:12:51.356-03:00 level=INFO msg="fetching bootstrap"
+time=2024-07-23T13:12:51.507-03:00 level=INFO msg="found existing bootstrap" data="{\"version\":1,\"asset\":\"sst-asset-bcbsefhnkuwd\",\"state\":\"sst-state-bcbsefhnkuwd\"}"
+time=2024-07-23T13:12:51.507-03:00 level=INFO msg="loaded config" app=express-sst-app stage=arthursantos
+time=2024-07-23T13:12:51.508-03:00 level=INFO msg=server addr=0.0.0.0:13557
+time=2024-07-23T13:12:51.508-03:00 level=INFO msg="getting endpoint"
+time=2024-07-23T13:12:51.508-03:00 level=INFO msg=subscribed type=*aws.FunctionInvokedEvent
+time=2024-07-23T13:12:51.509-03:00 level=INFO msg=subscribed type=*aws.FunctionResponseEvent
+time=2024-07-23T13:12:51.509-03:00 level=INFO msg=subscribed type=*aws.FunctionErrorEvent
+time=2024-07-23T13:12:51.509-03:00 level=INFO msg=subscribed type=*aws.FunctionLogEvent
+time=2024-07-23T13:12:51.509-03:00 level=INFO msg=subscribed type=*project.StackEvent
+time=2024-07-23T13:12:51.608-03:00 level=INFO msg="found endpoint endpoint" url="wss://a34itwvqqqm6ho.iot.sa-east-1.amazonaws.com/mqtt?X-Amz-Expires=86400"
+time=2024-07-23T13:12:51.608-03:00 level=INFO msg="signed request" url="wss://a34itwvqqqm6ho.iot.sa-east-1.amazonaws.com/mqtt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAU3D2SUHVHYQ5UD4Z%2F20240723%2Fsa-east-1%2Fiotdevicegateway%2Faws4_request&X-Amz-Date=20240723T161251Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=bea893153a70063bb73389cb1ed3e21a4c03975a34fdd69e840e3ef209352416"
+time=2024-07-23T13:12:51.733-03:00 level=INFO msg="mqtt connected"
+time=2024-07-23T13:12:51.801-03:00 level=INFO msg=subscribed type=*project.StackEvent
+time=2024-07-23T13:12:51.801-03:00 level=INFO msg=subscribed type=*watcher.FileChangedEvent
+time=2024-07-23T13:12:51.933-03:00 level=INFO msg="connected to iot"
+time=2024-07-23T13:12:51.935-03:00 level=INFO msg=watching path=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app
+time=2024-07-23T13:12:51.936-03:00 level=INFO msg=subscribed type=*watcher.FileChangedEvent
+time=2024-07-23T13:12:51.936-03:00 level=INFO msg=subscribed type=*server.DeployRequestedEvent
+time=2024-07-23T13:12:51.937-03:00 level=INFO msg=subscribed type=*project.StackEvent
+time=2024-07-23T13:12:51.937-03:00 level=INFO msg="running stack command" cmd=deploy
+time=2024-07-23T13:12:51.937-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:51.937-03:00 level=INFO msg="INFO locking app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:12:51.937-03:00 level=INFO msg="INFO getting data key=lock app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed addr=127.0.0.1:57940
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed type=*aws.FunctionInvokedEvent
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed type=*aws.FunctionResponseEvent
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed type=*aws.FunctionErrorEvent
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed type=*aws.FunctionLogEvent
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed type=*project.StackEvent
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed type=*aws.FunctionBuildEvent
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed type=*cloudflare.WorkerBuildEvent
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed type=*cloudflare.WorkerUpdatedEvent
+time=2024-07-23T13:12:51.988-03:00 level=INFO msg=subscribed type=*cloudflare.WorkerInvokedEvent
+time=2024-07-23T13:12:52.084-03:00 level=INFO msg="INFO putting data key=lock app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:12:52.208-03:00 level=INFO msg="INFO pulling state app=express-sst-app stage=arthursantos out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/.pulumi/stacks/express-sst-app/arthursantos.json"
+time=2024-07-23T13:12:52.215-03:00 level=INFO msg="socket upgrading" addr=[::1]:57943
+time=2024-07-23T13:12:52.215-03:00 level=INFO msg="socket connected" addr=[::1]:57943
+time=2024-07-23T13:12:52.215-03:00 level=INFO msg="sending invocations" count=0
+time=2024-07-23T13:12:52.318-03:00 level=INFO msg="INFO getting passphrase app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:12:52.429-03:00 level=INFO msg="INFO passphrase not found, setting passphrase app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:12:52.593-03:00 level=INFO msg="INFO getting data key=secret app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:12:52.696-03:00 level=INFO msg="esbuild building" out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721751172696.mjs
+time=2024-07-23T13:12:52.736-03:00 level=INFO msg="esbuild built" outfile=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721751172696.mjs
+time=2024-07-23T13:12:52.738-03:00 level=INFO msg="files changed" files=116
+time=2024-07-23T13:12:52.738-03:00 level=INFO msg="tracked files"
+time=2024-07-23T13:12:52.844-03:00 level=INFO msg="built workspace"
+time=2024-07-23T13:12:53.145-03:00 level=INFO msg="built stack"
+time=2024-07-23T13:12:53.251-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:53.252-03:00 level=INFO msg="built config"
+time=2024-07-23T13:12:53.252-03:00 level=INFO msg="running stack command" cmd=deploy
+time=2024-07-23T13:12:54.656-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:55.302-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:55.303-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:55.304-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:55.305-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:55.309-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:55.310-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:55.316-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.570-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.570-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.570-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.571-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.571-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.571-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.571-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.573-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.574-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.574-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.576-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.576-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.577-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.577-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.577-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.577-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.578-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.578-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.580-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.581-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.585-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.585-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.587-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.587-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.588-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.588-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.588-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.589-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.589-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.590-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.590-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.591-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.592-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.594-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.594-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.594-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.595-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.595-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.596-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.596-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.597-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.597-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.598-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.598-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.599-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.599-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.600-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.600-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.600-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:12:57.601-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.337-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.464-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.470-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.481-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.491-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.492-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.506-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.509-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.509-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.515-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.516-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.516-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.516-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.517-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.517-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.517-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.568-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.568-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.604-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.604-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.605-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.810-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.812-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.813-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.814-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.815-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.815-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.817-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.817-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.818-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.819-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.819-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.821-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.823-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.823-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.824-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.824-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.825-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.826-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:08.827-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.055-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.059-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.060-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.060-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.060-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.060-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.061-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.061-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.062-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.063-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.073-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.073-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.076-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.080-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.383-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.398-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.451-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.607-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.613-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.758-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.770-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.770-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.778-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.844-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:09.999-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.327-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.793-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.819-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.855-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.869-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.897-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.913-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.931-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.956-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:10.977-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.019-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.038-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.057-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.113-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.128-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.129-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.130-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.130-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.131-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.131-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.131-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.131-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.132-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.132-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.133-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.135-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.136-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.137-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.138-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.139-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.139-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.144-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.144-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.149-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.676-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.726-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:11.734-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.011-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.047-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.053-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.053-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.054-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.056-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.135-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.426-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.482-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.490-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.840-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.846-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.846-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.847-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.849-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:12.850-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.341-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.357-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.759-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.794-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.794-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.795-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.796-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.796-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.796-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.797-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.799-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.800-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.801-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.802-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.803-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.805-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.822-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.823-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.823-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.823-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.823-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.824-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.824-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.824-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.824-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.824-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.824-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.825-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.825-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.825-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:20.825-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.099-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.100-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.100-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.100-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.100-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.177-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.213-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.228-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.287-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.319-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.346-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.353-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.413-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.425-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.425-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.426-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.427-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.428-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.442-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.453-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.481-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.501-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.508-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.546-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.552-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.573-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.635-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.644-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.681-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.693-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.761-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.765-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.841-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:21.906-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.090-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.099-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.169-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.180-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.349-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.374-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.414-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.421-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.427-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:22.433-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:23.642-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:23.679-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:31.985-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:31.986-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.049-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.054-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.055-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.055-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.055-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.056-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.056-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.056-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.056-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.057-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.060-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.065-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.348-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.348-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.418-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.418-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.421-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.469-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.471-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.485-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.523-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:13:32.531-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.147-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.159-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.198-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.200-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.202-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.203-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.203-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.203-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.534-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.546-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.618-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.638-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.775-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:06.803-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.084-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.152-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.153-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.232-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.330-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.388-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.392-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.398-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.399-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.399-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.402-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.449-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.455-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.455-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.455-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.459-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.619-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.677-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.712-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.761-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.764-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.773-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.811-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.823-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.893-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.897-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:07.910-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:08.651-03:00 level=INFO msg="done running stack command"
+time=2024-07-23T13:15:08.652-03:00 level=INFO msg="INFO putting summary app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:15:08.652-03:00 level=INFO msg="INFO putting data key=summary app=express-sst-app stage=arthursantos/pjra2veegw9609dczjf2zte1"
+time=2024-07-23T13:15:08.830-03:00 level=INFO msg="parsing state"
+time=2024-07-23T13:15:09.052-03:00 level=INFO msg="ignoring file event" path=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/sst-env.d.ts op=CHMOD
+time=2024-07-23T13:15:09.052-03:00 level=INFO msg="file event" path=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/sst-env.d.ts op=WRITE
+time=2024-07-23T13:15:09.052-03:00 level=INFO msg=publishing type=*watcher.FileChangedEvent
+time=2024-07-23T13:15:09.053-03:00 level=INFO msg="file event" path=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/sst-env.d.ts op=WRITE
+time=2024-07-23T13:15:09.053-03:00 level=INFO msg="INFO putting links app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:15:09.053-03:00 level=INFO msg="INFO putting data key=link app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:15:09.053-03:00 level=INFO msg="INFO getting passphrase app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:15:09.402-03:00 level=INFO msg=publishing type=*project.StackEvent
+time=2024-07-23T13:15:09.402-03:00 level=INFO msg="done parsing state"
+time=2024-07-23T13:15:09.402-03:00 level=INFO msg="checking if code needs to be rebuilt" file=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/sst-env.d.ts
+time=2024-07-23T13:15:09.403-03:00 level=INFO msg="INFO pushing state app=express-sst-app stage=arthursantos from=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/.pulumi/stacks/express-sst-app/arthursantos.json"
+time=2024-07-23T13:15:09.581-03:00 level=INFO msg="INFO unlocking app=express-sst-app stage=arthursantos"
+time=2024-07-23T13:15:09.655-03:00 level=INFO msg="waiting for file changes"
+time=2024-07-23T13:15:10.785-03:00 level=INFO msg="ignoring file event" path=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/sst-env.d.ts op=CHMOD
+time=2024-07-23T13:15:25.641-03:00 level=INFO msg=done addr=127.0.0.1:57940
+time=2024-07-23T13:15:25.641-03:00 level=INFO msg=unsubscribing type=*cloudflare.WorkerBuildEvent
+time=2024-07-23T13:15:25.641-03:00 level=INFO msg=unsubscribing type=*aws.FunctionLogEvent
+time=2024-07-23T13:15:25.641-03:00 level=INFO msg=unsubscribing type=*aws.FunctionBuildEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*project.StackEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*aws.FunctionInvokedEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*aws.FunctionErrorEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg="cleaning up deployer"
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*aws.FunctionResponseEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*cloudflare.WorkerInvokedEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*cloudflare.WorkerUpdatedEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*server.DeployRequestedEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*project.StackEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*watcher.FileChangedEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*watcher.FileChangedEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*project.StackEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*aws.FunctionErrorEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*aws.FunctionLogEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*aws.FunctionResponseEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*project.StackEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg=unsubscribing type=*aws.FunctionInvokedEvent
+time=2024-07-23T13:15:25.642-03:00 level=INFO msg="cleaning up file watcher"
+time=2024-07-23T13:15:25.643-03:00 level=INFO msg="cleaning up iot"
