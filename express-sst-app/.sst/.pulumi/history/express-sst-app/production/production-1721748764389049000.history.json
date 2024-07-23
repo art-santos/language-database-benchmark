@@ -1,0 +1,43 @@
+{
+    "kind": "update",
+    "startTime": 1721748724,
+    "message": "chore: Add Express SST app files and configuration",
+    "environment": {
+        "exec.kind": "auto.local",
+        "git.author": "Arthur Santos",
+        "git.author.email": "arthursantosdeveloper@gmail.com",
+        "git.committer": "Arthur Santos",
+        "git.committer.email": "arthursantosdeveloper@gmail.com",
+        "git.dirty": "true",
+        "git.head": "dd7f2761b44e3f2f65f1cf305b1f9ad19868daf0",
+        "git.headName": "refs/heads/master",
+        "pulumi.arch": "arm64",
+        "pulumi.env.PULUMI_CONFIG_PASSPHRASE": "set",
+        "pulumi.env.PULUMI_DEBUG_COMMANDS": "true",
+        "pulumi.env.PULUMI_HOME": "set",
+        "pulumi.flag.event-log": "set",
+        "pulumi.flag.exec-kind": "set",
+        "pulumi.flag.non-interactive": "true",
+        "pulumi.flag.skip-preview": "true",
+        "pulumi.flag.stack": "set",
+        "pulumi.flag.target-dependents": "true",
+        "pulumi.flag.yes": "true",
+        "pulumi.os": "darwin",
+        "pulumi.version": "v3.115.2",
+        "updatePlan": "false",
+        "vcs.kind": "github.com",
+        "vcs.owner": "art-santos",
+        "vcs.repo": "language-database-benchmark",
+        "vcs.root": "express-sst-app/.sst"
+    },
+    "config": {
+        "aws:defaultTags": "{\"tags\":{\"sst:app\":\"express-sst-app\",\"sst:stage\":\"production\"}}",
+        "aws:region": "sa-east-1"
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1721748764,
+    "resourceChanges": {
+        "create": 1
+    }
+}

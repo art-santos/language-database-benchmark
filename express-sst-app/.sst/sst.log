@@ -1,11 +1,38 @@
-time=2024-07-23T12:11:36.877-03:00 level=INFO msg="checking for pulumi" path="/Users/arthursantos/Library/Application Support/sst/bin/pulumi"
-time=2024-07-23T12:11:36.993-03:00 level=INFO msg="checking for bun" path="/Users/arthursantos/Library/Application Support/sst/bin/bun"
-time=2024-07-23T12:11:36.996-03:00 level=INFO msg="initializing project" version=0.1.17
-time=2024-07-23T12:11:36.997-03:00 level=INFO msg="esbuild building" out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721747496997.mjs
-time=2024-07-23T12:11:37.006-03:00 level=INFO msg="esbuild built" outfile=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721747496997.mjs
-time=2024-07-23T12:11:37.006-03:00 level=INFO msg="evaluating config"
-time=2024-07-23T12:11:37.036-03:00 level=INFO msg="config evaluated"
-time=2024-07-23T12:11:37.036-03:00 level=INFO msg="checking platform"
-time=2024-07-23T12:11:37.036-03:00 level=INFO msg="checking provider" name=aws version=latest compare=latest
-time=2024-07-23T12:11:37.036-03:00 level=INFO msg="loading home"
-time=2024-07-23T12:11:42.103-03:00 level=ERROR msg="exited with error" err="failed to refresh cached credentials, no EC2 IMDS role found, operation error ec2imds: GetMetadata, request canceled, context deadline exceeded"
+time=2024-07-23T12:31:58.098-03:00 level=INFO msg="checking for pulumi" path="/Users/arthursantos/Library/Application Support/sst/bin/pulumi"
+time=2024-07-23T12:31:58.395-03:00 level=INFO msg="checking for bun" path="/Users/arthursantos/Library/Application Support/sst/bin/bun"
+time=2024-07-23T12:31:58.415-03:00 level=INFO msg="initializing project" version=0.1.17
+time=2024-07-23T12:31:58.416-03:00 level=INFO msg="esbuild building" out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721748718416.mjs
+time=2024-07-23T12:31:58.455-03:00 level=INFO msg="esbuild built" outfile=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721748718416.mjs
+time=2024-07-23T12:31:58.455-03:00 level=INFO msg="evaluating config"
+time=2024-07-23T12:31:58.486-03:00 level=INFO msg="config evaluated"
+time=2024-07-23T12:31:58.487-03:00 level=INFO msg="checking platform"
+time=2024-07-23T12:31:58.487-03:00 level=INFO msg="checking provider" name=aws version=latest compare=latest
+time=2024-07-23T12:31:58.487-03:00 level=INFO msg="loading home"
+time=2024-07-23T12:31:58.488-03:00 level=INFO msg="credentials found"
+time=2024-07-23T12:31:58.488-03:00 level=INFO msg="fetching bootstrap"
+time=2024-07-23T12:31:58.627-03:00 level=INFO msg="creating bootstrap bucket" name=sst-asset-bcbsefhnkuwd
+time=2024-07-23T12:32:01.947-03:00 level=INFO msg="loaded config" app=express-sst-app stage=production
+time=2024-07-23T12:32:01.948-03:00 level=INFO msg="initializing ui" isTTY=true
+time=2024-07-23T12:32:01.949-03:00 level=INFO msg="running stack command" cmd=deploy
+time=2024-07-23T12:32:01.950-03:00 level=INFO msg="INFO locking app=express-sst-app stage=production"
+time=2024-07-23T12:32:01.950-03:00 level=INFO msg="INFO getting data key=lock app=express-sst-app stage=production"
+time=2024-07-23T12:32:02.055-03:00 level=INFO msg="INFO putting data key=lock app=express-sst-app stage=production"
+time=2024-07-23T12:32:02.157-03:00 level=INFO msg="INFO pulling state app=express-sst-app stage=production out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/.pulumi/stacks/express-sst-app/production.json"
+time=2024-07-23T12:32:02.266-03:00 level=INFO msg="INFO getting passphrase app=express-sst-app stage=production"
+time=2024-07-23T12:32:02.377-03:00 level=INFO msg="INFO passphrase not found, setting passphrase app=express-sst-app stage=production"
+time=2024-07-23T12:32:02.649-03:00 level=INFO msg="INFO getting data key=secret app=express-sst-app stage=production"
+time=2024-07-23T12:32:02.740-03:00 level=INFO msg="esbuild building" out=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721748722740.mjs
+time=2024-07-23T12:32:02.776-03:00 level=INFO msg="esbuild built" outfile=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/sst.config.1721748722740.mjs
+time=2024-07-23T12:32:02.776-03:00 level=INFO msg="tracked files"
+time=2024-07-23T12:32:02.889-03:00 level=INFO msg="built workspace"
+time=2024-07-23T12:32:04.024-03:00 level=INFO msg="built stack"
+time=2024-07-23T12:32:04.150-03:00 level=INFO msg="built config"
+time=2024-07-23T12:32:04.150-03:00 level=INFO msg="running stack command" cmd=deploy
+time=2024-07-23T12:32:45.030-03:00 level=INFO msg="done running stack command"
+time=2024-07-23T12:32:45.031-03:00 level=INFO msg="INFO putting summary app=express-sst-app stage=production"
+time=2024-07-23T12:32:45.031-03:00 level=INFO msg="INFO putting data key=summary app=express-sst-app stage=production/os4vf0ii41qgskuqxkd9hhyb"
+time=2024-07-23T12:32:45.171-03:00 level=INFO msg="parsing state"
+time=2024-07-23T12:32:45.396-03:00 level=INFO msg="INFO putting links app=express-sst-app stage=production"
+time=2024-07-23T12:32:45.397-03:00 level=INFO msg="done parsing state"
+time=2024-07-23T12:32:45.397-03:00 level=INFO msg="INFO pushing state app=express-sst-app stage=production from=/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/.pulumi/stacks/express-sst-app/production.json"
+time=2024-07-23T12:32:45.554-03:00 level=INFO msg="INFO unlocking app=express-sst-app stage=production"

@@ -1,0 +1,29 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/express-sst-app/production",
+        "latest": {
+            "manifest": {
+                "time": "2024-07-23T12:32:43.71413-03:00",
+                "magic": "903b0fc199aa93536ce5f75e472bc9aed798eaf192e1d7b983c92c33a044182d",
+                "version": "v3.115.2"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:bJ5iBqZxsYM=:v1:yXS2pRNTqMT9USja:7LH7StD355EX98J+j4ea9ENMxXcCmw=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::pulumi:pulumi:Stack::express-sst-app-production",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2024-07-23T15:32:43.714124Z",
+                    "modified": "2024-07-23T15:32:43.714124Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/runtime/stack.ts#36,23"
+                }
+            ]
+        }
+    }
+}
