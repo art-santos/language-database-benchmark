@@ -1,0 +1,2780 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/express-sst-app/production",
+        "latest": {
+            "manifest": {
+                "time": "2024-07-23T14:34:44.113882-03:00",
+                "magic": "903b0fc199aa93536ce5f75e472bc9aed798eaf192e1d7b983c92c33a044182d",
+                "version": "v3.115.2"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:md/ivWfO6Ec=:v1:Pp8B5eQtRd1VBccW:JJkdK9UVdLK+dhVkh8Q1V68b+upLCQ=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::pulumi:pulumi:Stack::express-sst-app-production",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "created": "2024-07-23T15:32:43.714124Z",
+                    "modified": "2024-07-23T15:32:43.714124Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/runtime/stack.ts#36,23"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:sst:LinkRef::MyBucketLinkRef",
+                    "custom": false,
+                    "type": "sst:sst:LinkRef",
+                    "outputs": {
+                        "properties": {
+                            "name": "express-sst-app-production-mybucket-fefssduh",
+                            "type": "sst.aws.Bucket"
+                        },
+                        "target": "MyBucket"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::pulumi:pulumi:Stack::express-sst-app-production",
+                    "created": "2024-07-23T16:19:27.929123Z",
+                    "modified": "2024-07-23T16:19:27.929123Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/link.ts#23,7"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Cluster::MyCluster",
+                    "custom": false,
+                    "type": "sst:aws:Cluster",
+                    "parent": "urn:pulumi:production::express-sst-app::pulumi:pulumi:Stack::express-sst-app-production",
+                    "created": "2024-07-23T16:19:29.552357Z",
+                    "modified": "2024-07-23T16:19:29.552357Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/cluster.ts#811,5"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Bucket::MyBucket",
+                    "custom": false,
+                    "type": "sst:aws:Bucket",
+                    "parent": "urn:pulumi:production::express-sst-app::pulumi:pulumi:Stack::express-sst-app-production",
+                    "created": "2024-07-23T16:19:29.553165Z",
+                    "modified": "2024-07-23T16:19:29.553165Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/bucket.ts#301,5"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0",
+                    "custom": true,
+                    "id": "f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "defaultTags": "{\"tags\":{\"sst:app\":\"express-sst-app\",\"sst:stage\":\"production\"}}",
+                        "region": "sa-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.45.0"
+                    },
+                    "outputs": {
+                        "defaultTags": "{\"tags\":{\"sst:app\":\"express-sst-app\",\"sst:stage\":\"production\"}}",
+                        "region": "sa-east-1",
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.45.0"
+                    },
+                    "created": "2024-07-23T16:19:29.554288Z",
+                    "modified": "2024-07-23T16:19:29.554288Z"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "custom": false,
+                    "type": "sst:aws:Service",
+                    "outputs": {
+                        "_hint": "http://producti-MyServiceLoadBa-2064786972.sa-east-1.elb.amazonaws.com"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::pulumi:pulumi:Stack::express-sst-app-production",
+                    "created": "2024-07-23T16:19:29.555021Z",
+                    "modified": "2024-07-23T16:19:29.555021Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#84,5"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "custom": false,
+                    "type": "sst:aws:Vpc",
+                    "parent": "urn:pulumi:production::express-sst-app::pulumi:pulumi:Stack::express-sst-app-production",
+                    "created": "2024-07-23T16:19:29.556065Z",
+                    "modified": "2024-07-23T16:19:29.556065Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/vpc.ts#114,5"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:sst:LinkRef::MyServiceLinkRef",
+                    "custom": false,
+                    "type": "sst:sst:LinkRef",
+                    "outputs": {
+                        "properties": {
+                            "type": "sst.aws.Service",
+                            "url": "http://producti-MyServiceLoadBa-2064786972.sa-east-1.elb.amazonaws.com"
+                        },
+                        "target": "MyService"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::pulumi:pulumi:Stack::express-sst-app-production",
+                    "created": "2024-07-23T16:19:29.557063Z",
+                    "modified": "2024-07-23T16:19:29.557063Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/link.ts#23,7"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::pulumi:providers:random::default_4_15_0",
+                    "custom": true,
+                    "id": "9ff2e0f2-b8ca-4dfa-b5fc-1a568e1abaff",
+                    "type": "pulumi:providers:random",
+                    "inputs": {
+                        "version": "4.15.0"
+                    },
+                    "outputs": {
+                        "version": "4.15.0"
+                    },
+                    "created": "2024-07-23T16:19:29.788919Z",
+                    "modified": "2024-07-23T16:19:29.788919Z"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Bucket$random:index/randomId:RandomId::MyBucketId",
+                    "custom": true,
+                    "id": "HSRt6-4B",
+                    "type": "random:index/randomId:RandomId",
+                    "inputs": {
+                        "byteLength": 6
+                    },
+                    "outputs": {
+                        "b64Std": "HSRt6+4B",
+                        "b64Url": "HSRt6-4B",
+                        "byteLength": 6,
+                        "dec": "32042300206593",
+                        "hex": "1d246debee01",
+                        "id": "HSRt6-4B"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Bucket::MyBucket",
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:random::default_4_15_0::9ff2e0f2-b8ca-4dfa-b5fc-1a568e1abaff",
+                    "propertyDependencies": {
+                        "byteLength": []
+                    },
+                    "created": "2024-07-23T16:19:29.79868Z",
+                    "modified": "2024-07-23T16:19:29.79868Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/bucket.ts#324,26"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/eip:Eip::MyVpcElasticIp1",
+                    "custom": true,
+                    "id": "eipalloc-053de28a553efe995",
+                    "type": "aws:ec2/eip:Eip",
+                    "inputs": {
+                        "__defaults": [],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcElasticIp1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcElasticIp1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpc": true
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"delete\":180000000000,\"read\":900000000000,\"update\":300000000000}}",
+                        "allocationId": "eipalloc-053de28a553efe995",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:elastic-ip/eipalloc-053de28a553efe995",
+                        "associationId": "",
+                        "carrierIp": "",
+                        "customerOwnedIp": "",
+                        "customerOwnedIpv4Pool": "",
+                        "domain": "vpc",
+                        "id": "eipalloc-053de28a553efe995",
+                        "instance": "",
+                        "networkBorderGroup": "sa-east-1",
+                        "networkInterface": "",
+                        "privateIp": "",
+                        "ptrRecord": "",
+                        "publicDns": "ec2-54-232-76-62.sa-east-1.compute.amazonaws.com",
+                        "publicIp": "54.232.76.62",
+                        "publicIpv4Pool": "amazon",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcElasticIp1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcElasticIp1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpc": true
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "tags": [],
+                        "vpc": []
+                    },
+                    "created": "2024-07-23T16:19:30.624113Z",
+                    "modified": "2024-07-23T16:19:30.624113Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/eip.ts#286,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/eip:Eip::MyVpcElasticIp2",
+                    "custom": true,
+                    "id": "eipalloc-0573b8ac95222d440",
+                    "type": "aws:ec2/eip:Eip",
+                    "inputs": {
+                        "__defaults": [],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcElasticIp2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcElasticIp2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpc": true
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"delete\":180000000000,\"read\":900000000000,\"update\":300000000000}}",
+                        "allocationId": "eipalloc-0573b8ac95222d440",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:elastic-ip/eipalloc-0573b8ac95222d440",
+                        "associationId": "",
+                        "carrierIp": "",
+                        "customerOwnedIp": "",
+                        "customerOwnedIpv4Pool": "",
+                        "domain": "vpc",
+                        "id": "eipalloc-0573b8ac95222d440",
+                        "instance": "",
+                        "networkBorderGroup": "sa-east-1",
+                        "networkInterface": "",
+                        "privateIp": "",
+                        "ptrRecord": "",
+                        "publicDns": "ec2-18-231-238-147.sa-east-1.compute.amazonaws.com",
+                        "publicIp": "18.231.238.147",
+                        "publicIpv4Pool": "amazon",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcElasticIp2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcElasticIp2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpc": true
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "tags": [],
+                        "vpc": []
+                    },
+                    "created": "2024-07-23T16:19:30.659808Z",
+                    "modified": "2024-07-23T16:19:30.659808Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/eip.ts#286,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:iam/role:Role::MyServiceExecutionRole",
+                    "custom": true,
+                    "id": "express-sst-app-production-MyServiceExecutionRole-saeast1",
+                    "type": "aws:iam/role:Role",
+                    "inputs": {
+                        "__defaults": [
+                            "forceDetachPolicies",
+                            "maxSessionDuration",
+                            "path"
+                        ],
+                        "assumeRolePolicy": "{\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"ecs-tasks.amazonaws.com\"},\"Sid\":\"AllowAssumeRole\"}],\"Version\":\"2012-10-17\"}",
+                        "forceDetachPolicies": false,
+                        "managedPolicyArns": [
+                            "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
+                        ],
+                        "maxSessionDuration": 3600,
+                        "name": "express-sst-app-production-MyServiceExecutionRole-saeast1",
+                        "path": "/",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:iam::333117039082:role/express-sst-app-production-MyServiceExecutionRole-saeast1",
+                        "assumeRolePolicy": "{\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"ecs-tasks.amazonaws.com\"},\"Sid\":\"AllowAssumeRole\"}],\"Version\":\"2012-10-17\"}",
+                        "createDate": "2024-07-23T16:19:30Z",
+                        "description": "",
+                        "forceDetachPolicies": false,
+                        "id": "express-sst-app-production-MyServiceExecutionRole-saeast1",
+                        "inlinePolicies": [],
+                        "managedPolicyArns": [
+                            "arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy"
+                        ],
+                        "maxSessionDuration": 3600,
+                        "name": "express-sst-app-production-MyServiceExecutionRole-saeast1",
+                        "namePrefix": "",
+                        "path": "/",
+                        "permissionsBoundary": "",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "uniqueId": "AROAU3D2SUHVMVDNZCAWP"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "assumeRolePolicy": [],
+                        "managedPolicyArns": [],
+                        "name": []
+                    },
+                    "created": "2024-07-23T16:19:31.386732Z",
+                    "modified": "2024-07-23T16:19:31.386732Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#483,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket",
+                    "custom": true,
+                    "id": "express-sst-app-production-mybucket-fefssduh",
+                    "type": "aws:s3/bucketV2:BucketV2",
+                    "inputs": {
+                        "__defaults": [],
+                        "bucket": "express-sst-app-production-mybucket-fefssduh",
+                        "forceDestroy": true,
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":3600000000000,\"read\":1200000000000,\"update\":1200000000000}}",
+                        "accelerationStatus": "",
+                        "arn": "arn:aws:s3:::express-sst-app-production-mybucket-fefssduh",
+                        "bucket": "express-sst-app-production-mybucket-fefssduh",
+                        "bucketDomainName": "express-sst-app-production-mybucket-fefssduh.s3.amazonaws.com",
+                        "bucketPrefix": "",
+                        "bucketRegionalDomainName": "express-sst-app-production-mybucket-fefssduh.s3.sa-east-1.amazonaws.com",
+                        "corsRules": [],
+                        "forceDestroy": true,
+                        "grants": [
+                            {
+                                "id": "707397b95ff13794ecde4f4c64e2a1f97850b953587af2dfc5883e6278f0bc14",
+                                "permissions": [
+                                    "FULL_CONTROL"
+                                ],
+                                "type": "CanonicalUser",
+                                "uri": ""
+                            }
+                        ],
+                        "hostedZoneId": "Z7KQH4QJS55SO",
+                        "id": "express-sst-app-production-mybucket-fefssduh",
+                        "lifecycleRules": [],
+                        "loggings": [],
+                        "objectLockConfiguration": null,
+                        "objectLockEnabled": false,
+                        "policy": "",
+                        "region": "sa-east-1",
+                        "replicationConfigurations": [],
+                        "requestPayer": "BucketOwner",
+                        "serverSideEncryptionConfigurations": [
+                            {
+                                "rules": [
+                                    {
+                                        "applyServerSideEncryptionByDefaults": [
+                                            {
+                                                "kmsMasterKeyId": "",
+                                                "sseAlgorithm": "AES256"
+                                            }
+                                        ],
+                                        "bucketKeyEnabled": false
+                                    }
+                                ]
+                            }
+                        ],
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "versionings": [
+                            {
+                                "enabled": false,
+                                "mfaDelete": false
+                            }
+                        ],
+                        "websites": []
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Bucket::MyBucket",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$random:index/randomId:RandomId::MyBucketId"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "bucket": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$random:index/randomId:RandomId::MyBucketId"
+                        ],
+                        "forceDestroy": []
+                    },
+                    "retainOnDelete": true,
+                    "created": "2024-07-23T16:19:31.572037Z",
+                    "modified": "2024-07-23T16:19:31.572037Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/bucket.ts#338,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketPublicAccessBlock:BucketPublicAccessBlock::MyBucketPublicAccessBlock",
+                    "custom": true,
+                    "id": "express-sst-app-production-mybucket-fefssduh",
+                    "type": "aws:s3/bucketPublicAccessBlock:BucketPublicAccessBlock",
+                    "inputs": {
+                        "__defaults": [],
+                        "blockPublicAcls": true,
+                        "blockPublicPolicy": false,
+                        "bucket": "express-sst-app-production-mybucket-fefssduh",
+                        "ignorePublicAcls": true,
+                        "restrictPublicBuckets": false
+                    },
+                    "outputs": {
+                        "blockPublicAcls": true,
+                        "blockPublicPolicy": false,
+                        "bucket": "express-sst-app-production-mybucket-fefssduh",
+                        "id": "express-sst-app-production-mybucket-fefssduh",
+                        "ignorePublicAcls": true,
+                        "restrictPublicBuckets": false
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Bucket::MyBucket",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "blockPublicAcls": [],
+                        "blockPublicPolicy": [],
+                        "bucket": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket"
+                        ],
+                        "ignorePublicAcls": [],
+                        "restrictPublicBuckets": []
+                    },
+                    "created": "2024-07-23T16:19:31.985313Z",
+                    "modified": "2024-07-23T16:19:31.985313Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/s3/bucketPublicAccessBlock.ts#120,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketCorsConfigurationV2:BucketCorsConfigurationV2::MyBucketCors",
+                    "custom": true,
+                    "id": "express-sst-app-production-mybucket-fefssduh",
+                    "type": "aws:s3/bucketCorsConfigurationV2:BucketCorsConfigurationV2",
+                    "inputs": {
+                        "__defaults": [],
+                        "bucket": "express-sst-app-production-mybucket-fefssduh",
+                        "corsRules": [
+                            {
+                                "__defaults": [],
+                                "allowedHeaders": [
+                                    "*"
+                                ],
+                                "allowedMethods": [
+                                    "DELETE",
+                                    "GET",
+                                    "HEAD",
+                                    "POST",
+                                    "PUT"
+                                ],
+                                "allowedOrigins": [
+                                    "*"
+                                ],
+                                "maxAgeSeconds": 0
+                            }
+                        ]
+                    },
+                    "outputs": {
+                        "bucket": "express-sst-app-production-mybucket-fefssduh",
+                        "corsRules": [
+                            {
+                                "allowedHeaders": [
+                                    "*"
+                                ],
+                                "allowedMethods": [
+                                    "POST",
+                                    "GET",
+                                    "HEAD",
+                                    "DELETE",
+                                    "PUT"
+                                ],
+                                "allowedOrigins": [
+                                    "*"
+                                ],
+                                "exposeHeaders": [],
+                                "id": "",
+                                "maxAgeSeconds": 0
+                            }
+                        ],
+                        "expectedBucketOwner": "",
+                        "id": "express-sst-app-production-mybucket-fefssduh"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Bucket::MyBucket",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "bucket": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket"
+                        ],
+                        "corsRules": []
+                    },
+                    "created": "2024-07-23T16:19:32.465589Z",
+                    "modified": "2024-07-23T16:19:32.465589Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/s3/bucketCorsConfigurationV2.ts#132,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::pulumi:providers:docker::default_4_5_3",
+                    "custom": true,
+                    "id": "6947f83c-4564-4a71-910d-d004f1cb199a",
+                    "type": "pulumi:providers:docker",
+                    "inputs": {
+                        "version": "4.5.3"
+                    },
+                    "outputs": {
+                        "version": "4.5.3"
+                    },
+                    "created": "2024-07-23T16:19:32.560212Z",
+                    "modified": "2024-07-23T16:19:32.560212Z"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:iam/role:Role::MyServiceTaskRole",
+                    "custom": true,
+                    "id": "express-sst-app-production-MyServiceTaskRole-saeast1",
+                    "type": "aws:iam/role:Role",
+                    "inputs": {
+                        "__defaults": [
+                            "forceDetachPolicies",
+                            "maxSessionDuration",
+                            "path"
+                        ],
+                        "assumeRolePolicy": "{\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"ecs-tasks.amazonaws.com\"},\"Sid\":\"AllowAssumeRole\"}],\"Version\":\"2012-10-17\"}",
+                        "forceDetachPolicies": false,
+                        "inlinePolicies": [
+                            {
+                                "__defaults": [],
+                                "name": "inline",
+                                "policy": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Action\": \"s3:*\",\n      \"Resource\": [\n        \"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh/*\",\n        \"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh\"\n      ]\n    }\n  ]\n}"
+                            }
+                        ],
+                        "maxSessionDuration": 3600,
+                        "name": "express-sst-app-production-MyServiceTaskRole-saeast1",
+                        "path": "/",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:iam::333117039082:role/express-sst-app-production-MyServiceTaskRole-saeast1",
+                        "assumeRolePolicy": "{\"Statement\":[{\"Action\":\"sts:AssumeRole\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"ecs-tasks.amazonaws.com\"},\"Sid\":\"AllowAssumeRole\"}],\"Version\":\"2012-10-17\"}",
+                        "createDate": "2024-07-23T16:19:32Z",
+                        "description": "",
+                        "forceDetachPolicies": false,
+                        "id": "express-sst-app-production-MyServiceTaskRole-saeast1",
+                        "inlinePolicies": [
+                            {
+                                "name": "inline",
+                                "policy": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Action\": \"s3:*\",\n      \"Resource\": [\n        \"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh/*\",\n        \"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh\"\n      ]\n    }\n  ]\n}"
+                            }
+                        ],
+                        "managedPolicyArns": [],
+                        "maxSessionDuration": 3600,
+                        "name": "express-sst-app-production-MyServiceTaskRole-saeast1",
+                        "namePrefix": "",
+                        "path": "/",
+                        "permissionsBoundary": "",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "uniqueId": "AROAU3D2SUHVEZRXBVYKJ"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "assumeRolePolicy": [],
+                        "inlinePolicies": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket"
+                        ],
+                        "name": []
+                    },
+                    "created": "2024-07-23T16:19:32.86829Z",
+                    "modified": "2024-07-23T16:19:32.86829Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#462,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketPolicy:BucketPolicy::MyBucketPolicy",
+                    "custom": true,
+                    "id": "express-sst-app-production-mybucket-fefssduh",
+                    "type": "aws:s3/bucketPolicy:BucketPolicy",
+                    "inputs": {
+                        "__defaults": [],
+                        "bucket": "express-sst-app-production-mybucket-fefssduh",
+                        "policy": "{\n  \"Version\": \"2012-10-17\",\n  \"Statement\": [\n    {\n      \"Effect\": \"Allow\",\n      \"Action\": \"s3:GetObject\",\n      \"Resource\": \"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh/*\",\n      \"Principal\": \"*\"\n    },\n    {\n      \"Effect\": \"Deny\",\n      \"Action\": \"s3:*\",\n      \"Resource\": [\n        \"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh/*\",\n        \"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh\"\n      ],\n      \"Principal\": \"*\",\n      \"Condition\": {\n        \"Bool\": {\n          \"aws:SecureTransport\": \"false\"\n        }\n      }\n    }\n  ]\n}"
+                    },
+                    "outputs": {
+                        "bucket": "express-sst-app-production-mybucket-fefssduh",
+                        "id": "express-sst-app-production-mybucket-fefssduh",
+                        "policy": "{\"Statement\":[{\"Action\":\"s3:GetObject\",\"Effect\":\"Allow\",\"Principal\":\"*\",\"Resource\":\"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh/*\"},{\"Action\":\"s3:*\",\"Condition\":{\"Bool\":{\"aws:SecureTransport\":\"false\"}},\"Effect\":\"Deny\",\"Principal\":\"*\",\"Resource\":[\"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh/*\",\"arn:aws:s3:::express-sst-app-production-mybucket-fefssduh\"]}],\"Version\":\"2012-10-17\"}"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Bucket::MyBucket",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketPublicAccessBlock:BucketPublicAccessBlock::MyBucketPublicAccessBlock",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "bucket": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket"
+                        ],
+                        "policy": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:33.003755Z",
+                    "modified": "2024-07-23T16:19:33.003755Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/s3/bucketPolicy.ts#117,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Cluster$aws:ecs/cluster:Cluster::MyClusterCluster",
+                    "custom": true,
+                    "id": "arn:aws:ecs:sa-east-1:333117039082:cluster/express-sst-app-production-MyClusterCluster",
+                    "type": "aws:ecs/cluster:Cluster",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "express-sst-app-production-MyClusterCluster",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:ecs:sa-east-1:333117039082:cluster/express-sst-app-production-MyClusterCluster",
+                        "id": "arn:aws:ecs:sa-east-1:333117039082:cluster/express-sst-app-production-MyClusterCluster",
+                        "name": "express-sst-app-production-MyClusterCluster",
+                        "serviceConnectDefaults": null,
+                        "settings": [
+                            {
+                                "name": "containerInsights",
+                                "value": "disabled"
+                            }
+                        ],
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Cluster::MyCluster",
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "name": []
+                    },
+                    "created": "2024-07-23T16:19:40.370163Z",
+                    "modified": "2024-07-23T16:19:40.370163Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/cluster.ts#821,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:cloudwatch/logGroup:LogGroup::MyServiceLogGroup",
+                    "custom": true,
+                    "id": "/sst/cluster/express-sst-app-production-MyClusterCluster/MyService",
+                    "type": "aws:cloudwatch/logGroup:LogGroup",
+                    "inputs": {
+                        "__defaults": [
+                            "skipDestroy"
+                        ],
+                        "name": "/sst/cluster/express-sst-app-production-MyClusterCluster/MyService",
+                        "retentionInDays": 0,
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:logs:sa-east-1:333117039082:log-group:/sst/cluster/express-sst-app-production-MyClusterCluster/MyService",
+                        "id": "/sst/cluster/express-sst-app-production-MyClusterCluster/MyService",
+                        "kmsKeyId": "",
+                        "logGroupClass": "STANDARD",
+                        "name": "/sst/cluster/express-sst-app-production-MyClusterCluster/MyService",
+                        "namePrefix": "",
+                        "retentionInDays": 0,
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Cluster$aws:ecs/cluster:Cluster::MyClusterCluster"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "name": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Cluster$aws:ecs/cluster:Cluster::MyClusterCluster"
+                        ],
+                        "retentionInDays": []
+                    },
+                    "created": "2024-07-23T16:19:41.294463Z",
+                    "modified": "2024-07-23T16:19:41.294463Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#436,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc",
+                    "custom": true,
+                    "id": "vpc-0f1bad97ab18329d9",
+                    "type": "aws:ec2/vpc:Vpc",
+                    "inputs": {
+                        "__defaults": [],
+                        "cidrBlock": "10.0.0.0/16",
+                        "enableDnsHostnames": true,
+                        "enableDnsSupport": true,
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcVpc",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcVpc",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "__meta": "{\"schema_version\":\"1\"}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:vpc/vpc-0f1bad97ab18329d9",
+                        "assignGeneratedIpv6CidrBlock": false,
+                        "cidrBlock": "10.0.0.0/16",
+                        "defaultNetworkAclId": "acl-05f3ba07458916621",
+                        "defaultRouteTableId": "rtb-0b299e28d4b2e910c",
+                        "defaultSecurityGroupId": "sg-0c7fd4a81a9f72303",
+                        "dhcpOptionsId": "dopt-0b6651c50f263dfae",
+                        "enableDnsHostnames": true,
+                        "enableDnsSupport": true,
+                        "enableNetworkAddressUsageMetrics": false,
+                        "id": "vpc-0f1bad97ab18329d9",
+                        "instanceTenancy": "default",
+                        "ipv6AssociationId": "",
+                        "ipv6CidrBlock": "",
+                        "ipv6CidrBlockNetworkBorderGroup": "",
+                        "ipv6IpamPoolId": "",
+                        "ipv6NetmaskLength": 0,
+                        "mainRouteTableId": "rtb-0b299e28d4b2e910c",
+                        "ownerId": "333117039082",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcVpc",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcVpc",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "cidrBlock": [],
+                        "enableDnsHostnames": [],
+                        "enableDnsSupport": [],
+                        "tags": []
+                    },
+                    "created": "2024-07-23T16:19:42.023464Z",
+                    "modified": "2024-07-23T16:19:42.023464Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/vpc.ts#149,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/internetGateway:InternetGateway::MyVpcInternetGateway",
+                    "custom": true,
+                    "id": "igw-011fd171108b068b7",
+                    "type": "aws:ec2/internetGateway:InternetGateway",
+                    "inputs": {
+                        "__defaults": [],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcInternetGateway",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcInternetGateway",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:internet-gateway/igw-011fd171108b068b7",
+                        "id": "igw-011fd171108b068b7",
+                        "ownerId": "333117039082",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcInternetGateway",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcInternetGateway",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:42.780628Z",
+                    "modified": "2024-07-23T16:19:42.780628Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/vpc.ts#161,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet1",
+                    "custom": true,
+                    "id": "subnet-07da5b9069fde0a09",
+                    "type": "aws:ec2/subnet:Subnet",
+                    "inputs": {
+                        "__defaults": [
+                            "assignIpv6AddressOnCreation",
+                            "enableDns64",
+                            "enableResourceNameDnsARecordOnLaunch",
+                            "enableResourceNameDnsAaaaRecordOnLaunch",
+                            "ipv6Native",
+                            "mapPublicIpOnLaunch"
+                        ],
+                        "assignIpv6AddressOnCreation": false,
+                        "availabilityZone": "sa-east-1a",
+                        "cidrBlock": "10.0.3.0/24",
+                        "enableDns64": false,
+                        "enableResourceNameDnsARecordOnLaunch": false,
+                        "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                        "ipv6Native": false,
+                        "mapPublicIpOnLaunch": false,
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPrivateSubnet1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPrivateSubnet1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000},\"schema_version\":\"1\"}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:subnet/subnet-07da5b9069fde0a09",
+                        "assignIpv6AddressOnCreation": false,
+                        "availabilityZone": "sa-east-1a",
+                        "availabilityZoneId": "sae1-az1",
+                        "cidrBlock": "10.0.3.0/24",
+                        "customerOwnedIpv4Pool": "",
+                        "enableDns64": false,
+                        "enableLniAtDeviceIndex": 0,
+                        "enableResourceNameDnsARecordOnLaunch": false,
+                        "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                        "id": "subnet-07da5b9069fde0a09",
+                        "ipv6CidrBlock": "",
+                        "ipv6CidrBlockAssociationId": "",
+                        "ipv6Native": false,
+                        "mapCustomerOwnedIpOnLaunch": false,
+                        "mapPublicIpOnLaunch": false,
+                        "outpostArn": "",
+                        "ownerId": "333117039082",
+                        "privateDnsHostnameTypeOnLaunch": "ip-name",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPrivateSubnet1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPrivateSubnet1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "availabilityZone": [],
+                        "cidrBlock": [],
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:42.903783Z",
+                    "modified": "2024-07-23T16:19:42.903783Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/subnet.ts#238,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet2",
+                    "custom": true,
+                    "id": "subnet-097aab176aa107992",
+                    "type": "aws:ec2/subnet:Subnet",
+                    "inputs": {
+                        "__defaults": [
+                            "assignIpv6AddressOnCreation",
+                            "enableDns64",
+                            "enableResourceNameDnsARecordOnLaunch",
+                            "enableResourceNameDnsAaaaRecordOnLaunch",
+                            "ipv6Native",
+                            "mapPublicIpOnLaunch"
+                        ],
+                        "assignIpv6AddressOnCreation": false,
+                        "availabilityZone": "sa-east-1b",
+                        "cidrBlock": "10.0.4.0/24",
+                        "enableDns64": false,
+                        "enableResourceNameDnsARecordOnLaunch": false,
+                        "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                        "ipv6Native": false,
+                        "mapPublicIpOnLaunch": false,
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPrivateSubnet2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPrivateSubnet2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000},\"schema_version\":\"1\"}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:subnet/subnet-097aab176aa107992",
+                        "assignIpv6AddressOnCreation": false,
+                        "availabilityZone": "sa-east-1b",
+                        "availabilityZoneId": "sae1-az2",
+                        "cidrBlock": "10.0.4.0/24",
+                        "customerOwnedIpv4Pool": "",
+                        "enableDns64": false,
+                        "enableLniAtDeviceIndex": 0,
+                        "enableResourceNameDnsARecordOnLaunch": false,
+                        "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                        "id": "subnet-097aab176aa107992",
+                        "ipv6CidrBlock": "",
+                        "ipv6CidrBlockAssociationId": "",
+                        "ipv6Native": false,
+                        "mapCustomerOwnedIpOnLaunch": false,
+                        "mapPublicIpOnLaunch": false,
+                        "outpostArn": "",
+                        "ownerId": "333117039082",
+                        "privateDnsHostnameTypeOnLaunch": "ip-name",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPrivateSubnet2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPrivateSubnet2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "availabilityZone": [],
+                        "cidrBlock": [],
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:42.977798Z",
+                    "modified": "2024-07-23T16:19:42.977798Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/subnet.ts#238,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:lb/targetGroup:TargetGroup::MyServiceTargetHTTP80",
+                    "custom": true,
+                    "id": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:targetgroup/HTTP20240723161942071000000001/cb4a78c00768df83",
+                    "type": "aws:lb/targetGroup:TargetGroup",
+                    "inputs": {
+                        "__defaults": [
+                            "lambdaMultiValueHeadersEnabled",
+                            "proxyProtocolV2",
+                            "slowStart"
+                        ],
+                        "lambdaMultiValueHeadersEnabled": false,
+                        "namePrefix": "HTTP",
+                        "port": 80,
+                        "protocol": "HTTP",
+                        "proxyProtocolV2": false,
+                        "slowStart": 0,
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "targetType": "ip",
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:targetgroup/HTTP20240723161942071000000001/cb4a78c00768df83",
+                        "arnSuffix": "targetgroup/HTTP20240723161942071000000001/cb4a78c00768df83",
+                        "deregistrationDelay": 300,
+                        "healthCheck": {
+                            "enabled": true,
+                            "healthyThreshold": 5,
+                            "interval": 30,
+                            "matcher": "200",
+                            "path": "/",
+                            "port": "traffic-port",
+                            "protocol": "HTTP",
+                            "timeout": 5,
+                            "unhealthyThreshold": 2
+                        },
+                        "id": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:targetgroup/HTTP20240723161942071000000001/cb4a78c00768df83",
+                        "ipAddressType": "ipv4",
+                        "lambdaMultiValueHeadersEnabled": false,
+                        "loadBalancerArns": [],
+                        "loadBalancingAlgorithmType": "round_robin",
+                        "loadBalancingAnomalyMitigation": "off",
+                        "loadBalancingCrossZoneEnabled": "use_load_balancer_configuration",
+                        "name": "HTTP20240723161942071000000001",
+                        "namePrefix": "HTTP",
+                        "port": 80,
+                        "protocol": "HTTP",
+                        "protocolVersion": "HTTP1",
+                        "proxyProtocolV2": false,
+                        "slowStart": 0,
+                        "stickiness": {
+                            "cookieDuration": 86400,
+                            "cookieName": "",
+                            "enabled": false,
+                            "type": "lb_cookie"
+                        },
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "targetFailovers": [],
+                        "targetHealthStates": [],
+                        "targetType": "ip",
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "namePrefix": [],
+                        "port": [],
+                        "protocol": [],
+                        "targetType": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:43.377729Z",
+                    "modified": "2024-07-23T16:19:43.377729Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/lb/targetGroup.ts#319,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPublicRouteTable2",
+                    "custom": true,
+                    "id": "rtb-01f0b8eef68934656",
+                    "type": "aws:ec2/routeTable:RouteTable",
+                    "inputs": {
+                        "__defaults": [],
+                        "routes": [
+                            {
+                                "__defaults": [],
+                                "cidrBlock": "0.0.0.0/0",
+                                "gatewayId": "igw-011fd171108b068b7"
+                            }
+                        ],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPublicRouteTable2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPublicRouteTable2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:route-table/rtb-01f0b8eef68934656",
+                        "id": "rtb-01f0b8eef68934656",
+                        "ownerId": "333117039082",
+                        "propagatingVgws": [],
+                        "routes": [
+                            {
+                                "carrierGatewayId": "",
+                                "cidrBlock": "0.0.0.0/0",
+                                "coreNetworkArn": "",
+                                "destinationPrefixListId": "",
+                                "egressOnlyGatewayId": "",
+                                "gatewayId": "igw-011fd171108b068b7",
+                                "ipv6CidrBlock": "",
+                                "localGatewayId": "",
+                                "natGatewayId": "",
+                                "networkInterfaceId": "",
+                                "transitGatewayId": "",
+                                "vpcEndpointId": "",
+                                "vpcPeeringConnectionId": ""
+                            }
+                        ],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPublicRouteTable2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPublicRouteTable2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/internetGateway:InternetGateway::MyVpcInternetGateway",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "routes": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/internetGateway:InternetGateway::MyVpcInternetGateway"
+                        ],
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:44.028061Z",
+                    "modified": "2024-07-23T16:19:44.028061Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/routeTable.ts#218,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPublicRouteTable1",
+                    "custom": true,
+                    "id": "rtb-05145fcfe9274e372",
+                    "type": "aws:ec2/routeTable:RouteTable",
+                    "inputs": {
+                        "__defaults": [],
+                        "routes": [
+                            {
+                                "__defaults": [],
+                                "cidrBlock": "0.0.0.0/0",
+                                "gatewayId": "igw-011fd171108b068b7"
+                            }
+                        ],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPublicRouteTable1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPublicRouteTable1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:route-table/rtb-05145fcfe9274e372",
+                        "id": "rtb-05145fcfe9274e372",
+                        "ownerId": "333117039082",
+                        "propagatingVgws": [],
+                        "routes": [
+                            {
+                                "carrierGatewayId": "",
+                                "cidrBlock": "0.0.0.0/0",
+                                "coreNetworkArn": "",
+                                "destinationPrefixListId": "",
+                                "egressOnlyGatewayId": "",
+                                "gatewayId": "igw-011fd171108b068b7",
+                                "ipv6CidrBlock": "",
+                                "localGatewayId": "",
+                                "natGatewayId": "",
+                                "networkInterfaceId": "",
+                                "transitGatewayId": "",
+                                "vpcEndpointId": "",
+                                "vpcPeeringConnectionId": ""
+                            }
+                        ],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPublicRouteTable1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPublicRouteTable1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/internetGateway:InternetGateway::MyVpcInternetGateway",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "routes": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/internetGateway:InternetGateway::MyVpcInternetGateway"
+                        ],
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:44.029136Z",
+                    "modified": "2024-07-23T16:19:44.029136Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/routeTable.ts#218,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/securityGroup:SecurityGroup::MyVpcSecurityGroup",
+                    "custom": true,
+                    "id": "sg-098361e7d34c8d4c5",
+                    "type": "aws:ec2/securityGroup:SecurityGroup",
+                    "inputs": {
+                        "__defaults": [
+                            "name",
+                            "revokeRulesOnDelete"
+                        ],
+                        "description": "Managed by Pulumi",
+                        "egress": [
+                            {
+                                "__defaults": [
+                                    "self"
+                                ],
+                                "cidrBlocks": [
+                                    "0.0.0.0/0"
+                                ],
+                                "fromPort": 0,
+                                "protocol": "-1",
+                                "self": false,
+                                "toPort": 0
+                            }
+                        ],
+                        "ingress": [
+                            {
+                                "__defaults": [
+                                    "self"
+                                ],
+                                "cidrBlocks": [
+                                    "0.0.0.0/0"
+                                ],
+                                "fromPort": 0,
+                                "protocol": "-1",
+                                "self": false,
+                                "toPort": 0
+                            }
+                        ],
+                        "name": "MyVpcSecurityGroup-a2c7979",
+                        "revokeRulesOnDelete": false,
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcSecurityGroup",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcSecurityGroup",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":900000000000},\"schema_version\":\"1\"}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:security-group/sg-098361e7d34c8d4c5",
+                        "description": "Managed by Pulumi",
+                        "egress": [
+                            {
+                                "cidrBlocks": [
+                                    "0.0.0.0/0"
+                                ],
+                                "description": "",
+                                "fromPort": 0,
+                                "ipv6CidrBlocks": [],
+                                "prefixListIds": [],
+                                "protocol": "-1",
+                                "securityGroups": [],
+                                "self": false,
+                                "toPort": 0
+                            }
+                        ],
+                        "id": "sg-098361e7d34c8d4c5",
+                        "ingress": [
+                            {
+                                "cidrBlocks": [
+                                    "0.0.0.0/0"
+                                ],
+                                "description": "",
+                                "fromPort": 0,
+                                "ipv6CidrBlocks": [],
+                                "prefixListIds": [],
+                                "protocol": "-1",
+                                "securityGroups": [],
+                                "self": false,
+                                "toPort": 0
+                            }
+                        ],
+                        "name": "MyVpcSecurityGroup-a2c7979",
+                        "namePrefix": "",
+                        "ownerId": "333117039082",
+                        "revokeRulesOnDelete": false,
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcSecurityGroup",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcSecurityGroup",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "description": [],
+                        "egress": [],
+                        "ingress": [],
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:45.005719Z",
+                    "modified": "2024-07-23T16:19:45.005719Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/vpc.ts#171,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet1",
+                    "custom": true,
+                    "id": "subnet-03f63cd09377b6447",
+                    "type": "aws:ec2/subnet:Subnet",
+                    "inputs": {
+                        "__defaults": [
+                            "assignIpv6AddressOnCreation",
+                            "enableDns64",
+                            "enableResourceNameDnsARecordOnLaunch",
+                            "enableResourceNameDnsAaaaRecordOnLaunch",
+                            "ipv6Native"
+                        ],
+                        "assignIpv6AddressOnCreation": false,
+                        "availabilityZone": "sa-east-1a",
+                        "cidrBlock": "10.0.1.0/24",
+                        "enableDns64": false,
+                        "enableResourceNameDnsARecordOnLaunch": false,
+                        "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                        "ipv6Native": false,
+                        "mapPublicIpOnLaunch": true,
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPublicSubnet1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPublicSubnet1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000},\"schema_version\":\"1\"}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:subnet/subnet-03f63cd09377b6447",
+                        "assignIpv6AddressOnCreation": false,
+                        "availabilityZone": "sa-east-1a",
+                        "availabilityZoneId": "sae1-az1",
+                        "cidrBlock": "10.0.1.0/24",
+                        "customerOwnedIpv4Pool": "",
+                        "enableDns64": false,
+                        "enableLniAtDeviceIndex": 0,
+                        "enableResourceNameDnsARecordOnLaunch": false,
+                        "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                        "id": "subnet-03f63cd09377b6447",
+                        "ipv6CidrBlock": "",
+                        "ipv6CidrBlockAssociationId": "",
+                        "ipv6Native": false,
+                        "mapCustomerOwnedIpOnLaunch": false,
+                        "mapPublicIpOnLaunch": true,
+                        "outpostArn": "",
+                        "ownerId": "333117039082",
+                        "privateDnsHostnameTypeOnLaunch": "ip-name",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPublicSubnet1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPublicSubnet1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "availabilityZone": [],
+                        "cidrBlock": [],
+                        "mapPublicIpOnLaunch": [],
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:53.346795Z",
+                    "modified": "2024-07-23T16:19:53.346795Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/subnet.ts#238,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet2",
+                    "custom": true,
+                    "id": "subnet-02fa1d20beebe3abd",
+                    "type": "aws:ec2/subnet:Subnet",
+                    "inputs": {
+                        "__defaults": [
+                            "assignIpv6AddressOnCreation",
+                            "enableDns64",
+                            "enableResourceNameDnsARecordOnLaunch",
+                            "enableResourceNameDnsAaaaRecordOnLaunch",
+                            "ipv6Native"
+                        ],
+                        "assignIpv6AddressOnCreation": false,
+                        "availabilityZone": "sa-east-1b",
+                        "cidrBlock": "10.0.2.0/24",
+                        "enableDns64": false,
+                        "enableResourceNameDnsARecordOnLaunch": false,
+                        "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                        "ipv6Native": false,
+                        "mapPublicIpOnLaunch": true,
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPublicSubnet2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPublicSubnet2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1200000000000},\"schema_version\":\"1\"}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:subnet/subnet-02fa1d20beebe3abd",
+                        "assignIpv6AddressOnCreation": false,
+                        "availabilityZone": "sa-east-1b",
+                        "availabilityZoneId": "sae1-az2",
+                        "cidrBlock": "10.0.2.0/24",
+                        "customerOwnedIpv4Pool": "",
+                        "enableDns64": false,
+                        "enableLniAtDeviceIndex": 0,
+                        "enableResourceNameDnsARecordOnLaunch": false,
+                        "enableResourceNameDnsAaaaRecordOnLaunch": false,
+                        "id": "subnet-02fa1d20beebe3abd",
+                        "ipv6CidrBlock": "",
+                        "ipv6CidrBlockAssociationId": "",
+                        "ipv6Native": false,
+                        "mapCustomerOwnedIpOnLaunch": false,
+                        "mapPublicIpOnLaunch": true,
+                        "outpostArn": "",
+                        "ownerId": "333117039082",
+                        "privateDnsHostnameTypeOnLaunch": "ip-name",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPublicSubnet2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPublicSubnet2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "availabilityZone": [],
+                        "cidrBlock": [],
+                        "mapPublicIpOnLaunch": [],
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:53.381013Z",
+                    "modified": "2024-07-23T16:19:53.381013Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/subnet.ts#238,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTableAssociation:RouteTableAssociation::MyVpcPublicRouteTableAssociation2",
+                    "custom": true,
+                    "id": "rtbassoc-089bf5ab7f89b098f",
+                    "type": "aws:ec2/routeTableAssociation:RouteTableAssociation",
+                    "inputs": {
+                        "__defaults": [],
+                        "routeTableId": "rtb-01f0b8eef68934656",
+                        "subnetId": "subnet-02fa1d20beebe3abd"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                        "gatewayId": "",
+                        "id": "rtbassoc-089bf5ab7f89b098f",
+                        "routeTableId": "rtb-01f0b8eef68934656",
+                        "subnetId": "subnet-02fa1d20beebe3abd"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPublicRouteTable2",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet2"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "routeTableId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPublicRouteTable2"
+                        ],
+                        "subnetId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet2"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:53.790602Z",
+                    "modified": "2024-07-23T16:19:53.790602Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/routeTableAssociation.ts#117,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTableAssociation:RouteTableAssociation::MyVpcPublicRouteTableAssociation1",
+                    "custom": true,
+                    "id": "rtbassoc-0ff83a8e9cf50394e",
+                    "type": "aws:ec2/routeTableAssociation:RouteTableAssociation",
+                    "inputs": {
+                        "__defaults": [],
+                        "routeTableId": "rtb-05145fcfe9274e372",
+                        "subnetId": "subnet-03f63cd09377b6447"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                        "gatewayId": "",
+                        "id": "rtbassoc-0ff83a8e9cf50394e",
+                        "routeTableId": "rtb-05145fcfe9274e372",
+                        "subnetId": "subnet-03f63cd09377b6447"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPublicRouteTable1",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet1"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "routeTableId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPublicRouteTable1"
+                        ],
+                        "subnetId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet1"
+                        ]
+                    },
+                    "created": "2024-07-23T16:19:53.804571Z",
+                    "modified": "2024-07-23T16:19:53.804571Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/routeTableAssociation.ts#117,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$docker:index/image:Image::MyServiceImage",
+                    "custom": true,
+                    "id": "333117039082.dkr.ecr.sa-east-1.amazonaws.com/sst-asset:MyService",
+                    "type": "docker:index/image:Image",
+                    "inputs": {
+                        "build": {
+                            "context": "/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app",
+                            "contextDigest": "c3bf4ea845b02b7f42fa5a4afb1a2b1391ca6a34accd25d2e304fbe41da148ac",
+                            "dockerfile": "/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/Dockerfile",
+                            "platform": "linux/amd64"
+                        },
+                        "buildOnPreview": false,
+                        "imageName": "333117039082.dkr.ecr.sa-east-1.amazonaws.com/sst-asset:MyService",
+                        "registry": {
+                            "password": {
+                                "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                                "ciphertext": "v1:GMqpfGXxJMDLZafa:BOBqv5e7njoxAHi9BDYDk6o4Xpg2P1pC69yxio8Su+7CS3J8zHPPUXCbxKMtdv8cD7m5rI9IuJJLa1wSxkfijaELXA6hi3Ee1yE9JqRMTEUFkQKpU267Brtd2MPNMhiN6TvLaqmlf85ZcpBkaBbASI1e3ayJ8qNq057vMMJmcML30OxAvALPJpbA4DAD1IiMdMn+Nu9sv+u31Xhx5CkIckBfSoQMUeTeZwECoipaKw2mHAJ0HUubxEHul3XpdPca0QTH4Yrjf7QOFqjGqMvl9h1rDp0ujGNHeX2nSjMsVv9I8XZE7F3tjT5nOp2K+jzJyKq3QytrGr8SVeygphdBf3dyinFNdNEqk1/QQsjOsigdXow1IpCfWXQzdFx2zhiDZ2z132Y0ilfJLevwov6T7adtgOFAxGWRvstmsc1N6u0IAOY/1vyuKZUAM9e1lpeKHn8mxcVEpbvWS586sEW5JOxrdGSDpjnT/IJVyXHbwGJG8IXhm1OOVao6bBIhL8MkX2Mb09Ok+XTt4L1pK/Dv9PYNEU9KjqwszSwpeAZ1AAVX1V7qifK1cQgFV8FKxSffQAJSsYS0rSHyVIQBhsPl0T+V62TsqlyuzhdtQZnxGIIcZsGnXZYaOS3xvh8InPLvq+aFKdwlCVP4Ohspb1GOvUXjA57vBWl7GN9rEVNwKb37Si4gA8jgvDBQ9Q0UhSxEPMGm0WfZlqatZX+XdVdOEFQXeB8P9g6hvYQnZq88JKfMXVH/aPUYtRuwVz+G8kU1rd76diq7pLVBE+8S8OEZRY2xPTuCCFlKiSheaMIp8KXS8ZUDZJIKGO/DVY8PTCgYsKrk91yTwkJzVuSKO5SfgMP+qvyQ2yPz+MV/OY/NxBDvoQGrPT2dNzN6JyfVFcutSye2K43wQperKE+QjQWO3nvbZGGr4h0vRP1cLJDieP3c0zfo0I7wgEVXDv234sokAqlX2Ni5HBo2vFf9AT2dKjwZAO1hBpjNnw9ml6QZXE/DpEj3xjWV98OkLD9bF0n62xjs9Q3zyrKTqtfMp6/XpoGy6/Xug60jv4iGvOZ78gqPBYoVPCLo5LmE8U5v7QBzemPrOAxdF4H3cKmcTjoMZp4oVCEbpBGTF3ZnFHYMdvDZEnRF1tUDccUHBAMht7UZuAeKEr6U8V9csZBMwjh6jTaXYiQ4532sXihmVD5ZbDw8rdCnfmhD/NAMLctbhau9xgWVg0urz1Gslh1WuArDsAtmIXqYt+AnrhZd79wn+b3U6vdmXfknSo7fyRypdP07AZ4aN1R17CiuMsHx0iVGoQIKsP4Cmfi+pLQ6ZkERNg4tDhFSmTUy/6e3YiRVcCNTrbOIF/sRHlU87MWeza9PxvG+WL1UhiG51kXip5liAXeFPTuY13cjCUhRgi2yTU3fZeLzdQJWMv2YKiTrLUYZdbDXPSq00a+1JkNT8qShPf8FA62MzGxAjaUt1BijQRIHSG6lBUI5SqW8WZjCNbfQpReEFfm2c22LRTMP282q5CA1BO9BJmxVRk5Qxb8arjQIXnRjN8ALaxH4Z8vzq9eV8B4TEkAGmg/7lymJk4h9afiGIEFAZKgoP29dcP4Lbexa8C5cYN+CkGzy2VIt3BtZAewsiQQmgpqlzkhOvAGSQLOEGatfsYA8NFpF/3MLMYveCxNsV08kQEjpW1ZTPybLLgoT62M5ilvQ00HImIqhYZbZAcfocq3GUPtYBJ0FUrHsmYpF5lYNr//UDYnSPr7M4KFodd30KeRqkfkTwFwf62/xWCxuqJlaZQquMmBaKiV9yqosf1u5rTGXNBs77RlTQhyf9GjWuknaCYijEgtsYeww6V4TFinCaeE0TS0TyTuGpkByX6na7ym0Gel4ORYOtyvObAU/XyLaeuXxvluxNwftXC4wHGkqkVN4swymmIJ4MDZX+FdW3eNx/bQVJXmmsryG4lwQUe9/alHF6FFjCva0Ft3GZfzrLODUJj5ipzgh5m+ghQByDpT9CuJTt6j17Tc+a3+x+sWpir7AIZFAhCKFzPh4BihRu/K2pSt7BOxMOLSSZmoWPMmUNSdQOGZrm6qksoErzyLo5HtK4ZjR0QfatujEM7sJi404lSi7fV5EfMgSo9iYY3xn65ZNDxuS5UHNiNBfMicrNhr9qLCaGPoGTOuuNhcm7Osn3FTtBHpowmZetjJxvK2X+aKpLl2ZQrxPM67S+1xLW+/EYAq6gznmjNJyq73XtVsqQAe/Jw2e6VE6OYRWIBSAJjbHv/Rf7/zqCCc3YEYc8BcyD9xDHiOZZxBjkYX7GB9uGOWoEkxZ55gahCtcLBO4XFzj9ZoeCOXgZLFDtvYY941/LE291nrLd5jvaLAyoNbGCON31QY8ULPaeZayADL9M+rovtZulp9+yz0T4u6PinjFlErd2DbgsrisV2fqfZjXO+1Br0DqcmeCH4B5qSAksImr7O0u5cWK"
+                            },
+                            "server": "https://333117039082.dkr.ecr.sa-east-1.amazonaws.com",
+                            "username": "AWS"
+                        },
+                        "skipPush": false
+                    },
+                    "outputs": {
+                        "__inputs": {
+                            "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                            "ciphertext": "v1:CAdMFtSMHFxkch0W:HTDqHMQvP7UIGP+Fp26qfmw81bbDv8aaraKDrlSIbn/PY6RRl3snQEJcYyILG510h9CxS2eVjCbWITQ8JymsrfvXNKdNcmRcYKbhmasWHwXXKbsCCqoFBuFU9xplkw3aGgfkCuGjTxfXEvCOZZ8QsuneEoGa+alknMLdGMozkTLJCaWk9ca3hS+E0a7ug+kcyp1XAFE90INafAbDgzKxtnOkUMUllfPKFjiEuP/AQxyIWUGKjfAh6B6ePBTSzaf6WeZPj5M1TmwFpA+di0gBcT/CYNv76RFI1VQB3mJnGPBhsJhgIzQNCptyhETzxklGu+T0iTnHHpOmjDD13Dku9IFM7yhlseG1Y1nchNdHm843fJmwCCqLFZKpzQxHvNkLgPQMKdK1ERcJ2N2zwEcmLmbDWORJWLdMeB7clREAduPX8p7VCvjResznOFNh77MNQCNYK3HVGwn5RWNDrdvPomEeuN7G3EyHd4nT8RN9Ia6NH7gqqMviqkQAtx0dcJ0T+mpTmBY6R2FA1QkbY6QKpbvi4PrV5ubHVy6/9f4xIs6YAxoxCr4lqTBKSwJyGwuOxLPxUMyi/4ipUaP6M6dqtilm7RJmKkQdzWI/lWgbOQG6vokLryiErFuKeZ7BCnPhJrlWlQkQzMSJosR43NbAmP5XmiyhEVWNtiZpz74gRs/gL4z/PRQYEk607T78WrIBWu7sOvO7AeMFSBH+z1C5ebFxbmmG7uZarjMXAc8fMAqZuEmI2RMamAnSeEyc+7dQ23C4443TXnpdyrzrXK8E6XYGEZLtH00t2A0KZUOvNFiSOxMPmxcMYJl4K0zOgSBJrfa9jikHZBBuXo+IqaBtgbZEHlaVDKFYNQP1pLQ5xAymvj332s45yeyzPzf+BAgyongmAhfjPjs7w3LzdGWhOrvO3/3/frTh6brww/njWQNzHQ5nuQ1wx1TA5xjD2eaZpFJd1nNLS8Z+yUksoLpdQSo0YN7RVT/Ai0d+U8eF3obQBoMc5w7NJJRDdF4yCCzy1qRM3GI622F34HGgOuO9gf0y+W0AVyuUcVo0sG7m6GJ8izHFv/8369knGLNd3ZW/yubsevX/pVWlPRzKlnNxLzg3125QviYsbenBvHW7gkwxRFDy1TxxQ4WxhbHP+DgH+PsOSxV6K7vQgw3/z3T11/5HLP6IwQ+WUFN7FvWxV0Ju3vfRbcDi4OZ2f+IQ6bAynbr/cL1fwWGXPdrXFrXIUlQlB1yx77U+nXKEhZYdVRDhcu2ZGEtkPkfvuH5JjqXZoLFbTIUg/OJMTx2dQFqRncjcGBpHPkeE0Z7ytZVRGlemRQWpW9SH5bpjDwbhiN8+RdZCX79GCTgy7++jSXklPwwD3QIHznS42BP98MjGeWT15fnX1DnVGyKnpA0/v9L7FS7aWs+ugB2I1KnZNcnoBLT2u5IJgz1vhX013s7ujjFJu1iReyR+mnMy8N6FUrNrZiXE6bYWRNlzPCTnqdzaJYWY1/C2udGDddPM0eAVkfkEmAXetwn8Me3MyXBqLSa6ctbQrJfkjFR8pEgVv6AmIMqV5Dlm8CDYRGmIATC6TgtT0b8Mhch9K3fDBeK13GHWGkFcSSvm8Wb92EK19sugaz3nAsnMsPMDndH6D9M+ROR7HKXdjL1JeNKyKvilzoKozfkliExXWkk5axB5Nqw8vbuFAJi0Tl8YfCyvmyI5Tb1Jpt66Z1ecSjZt07TzZUIAS0eDdlR7x+wyz8vAghZXGBt+eTmOdC04TCzhCgfNKcvbt7UtL1DBkRhIcNzX7h8r3GuXAfDxcmNAIsdwDPzjweHe1EICMcFEQ9c9m1gmw/nlNVGGJmqzXhVh5KNYhIuYFX5IoLEPs5kMfVI1CKJVWp9vPn42r+yuY4MA3bI9M6LNtAFFUSbO2sWr7DNvrQNeCJrQJ00zYQoHKpdVDA3M84815Kv0dwFE7vcIUEDl+iUnrvLrC8eZ7VNY4b+5SYSLmD4mvPl67Hv0huGnd0SMAUSMyOTkORgyR4zFwIQM6vn0pbDFa7AhvzQJ+rGQiiwVg5QfxjzVjtns5GLl5DV3s/IsT/4oe4r5oA98al7h6Wbspj3k8KwvwUZQbAc5skpUYrvL/TAJMjKHPSkTgmJWtXKckEgleKEN/Yf7h1oG4JGzmv5c0LKhHWVr4DpDf1MK8LOMhKm4Qw+CsMkyDchl9Im+9dpAHv1jfAFA70S8Ulbr853mOuj35cyBwSrx/Vx/YxuEbW2/P6uQ579dezn08khJL/6DcSH61tQM9oxCEqMxdCuL7H3c5gJCmqIrjKRmQ130ytcasD6emIih8EGluuhAf/KVuP9yU8eNpyKDVXDboW4oq0KoOjeA664HZf/Q1BjZsEYxPXquFA1wfBAWXyMU986LPkLJwOt8JxIpkPTFq1r7cebmWEOXeJp0RUqSk5b/P8ZDa9b5AtNk/vjw5H9bUaNJBJyefSNubPTogiVH1BFn2UYRaoue0WVaPD6OA5hMMaROe0OBZCass4YWzFVRAXW1iVNYTvrYyhJKWGQZUEQF0YsbpL3T6XF0ZL3EKXfk1tvFb5YNnmBKjYkDTD6bTWFJ0p4FXL58BLVmPEywTsVibQmsfOkHci8Kfl/6Q6jmgGsl/r5Tiyw9vu/htiDvIy5OvbY+XhR/pvLwm1B5sM9XiGoY5/WunwVp7x/3C9pStf5RrL8c735N3Nis/84N+sBrNutLw0vHOC5gI3HIzz6ltm2gj9BE9UhnPOw5tb+jXdhMy7O3Zw0q+GzVNi5kQyPnHBM/3qXBwAGX5PhXJDkXashcYMOWZhVgHVwFFRYJNP+VcTzqj8urURZ1QNAmbuvfJIZzUnxEIa/Mu0v2ac1oxgELbs2VaXKlM10i/FZMWSNnAlNAJtaeHzbXghtQb4m6fXzAZAaTqCjqEeJMTlTqXkeIuVvvNXov9LdPLow0bA3ZfpYkGbXFuJHACpN3iYsEA6vm9D+mq2BvFvp5UtRw99l5Qndfdf4ovogQ9SAL2g/TapNk44PTqAlP1GiZG8yqCKBqGJ3/zhM+oGeq+hwInLgBeCTTryMZFj9DSRl8tb0O9++CFk0fCPYCAx7T2FmWgy8WxxCrm7mepGyqYN8HJL8Aux4uLbgRKyreghqrk9j2mXqIaHzGa5etzgxa8bZWLnlNVb0="
+                        },
+                        "baseImageName": "333117039082.dkr.ecr.sa-east-1.amazonaws.com/sst-asset:MyService",
+                        "context": "/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app",
+                        "dockerfile": "Dockerfile",
+                        "imageName": "333117039082.dkr.ecr.sa-east-1.amazonaws.com/sst-asset:MyService",
+                        "platform": "linux/amd64",
+                        "registryServer": "https://333117039082.dkr.ecr.sa-east-1.amazonaws.com",
+                        "repoDigest": "333117039082.dkr.ecr.sa-east-1.amazonaws.com/sst-asset@sha256:5aae11925db848e8b62a0c9d6c4f556cc61c6715fe1cbee7eab5010c69183b1a"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:docker::default_4_5_3::6947f83c-4564-4a71-910d-d004f1cb199a",
+                    "propertyDependencies": {
+                        "build": [],
+                        "buildOnPreview": [],
+                        "imageName": [],
+                        "registry": [],
+                        "skipPush": []
+                    },
+                    "created": "2024-07-23T16:20:31.586345Z",
+                    "modified": "2024-07-23T16:20:31.586345Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#314,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:ecs/taskDefinition:TaskDefinition::MyServiceTask",
+                    "custom": true,
+                    "id": "express-sst-app-production-MyClusterCluster-MyService",
+                    "type": "aws:ecs/taskDefinition:TaskDefinition",
+                    "inputs": {
+                        "__defaults": [
+                            "skipDestroy"
+                        ],
+                        "containerDefinitions": "[{\"name\":\"MyService\",\"image\":\"333117039082.dkr.ecr.sa-east-1.amazonaws.com/sst-asset@sha256:5aae11925db848e8b62a0c9d6c4f556cc61c6715fe1cbee7eab5010c69183b1a\",\"pseudoTerminal\":true,\"portMappings\":[{\"containerPort\":80}],\"logConfiguration\":{\"logDriver\":\"awslogs\",\"options\":{\"awslogs-group\":\"/sst/cluster/express-sst-app-production-MyClusterCluster/MyService\",\"awslogs-region\":\"sa-east-1\",\"awslogs-stream-prefix\":\"/service\"}},\"environment\":[{\"name\":\"SST_RESOURCE_MyBucket\",\"value\":\"{\\\"name\\\":\\\"express-sst-app-production-mybucket-fefssduh\\\",\\\"type\\\":\\\"sst:aws:Bucket\\\"}\"},{\"name\":\"SST_RESOURCE_App\",\"value\":\"{\\\"name\\\":\\\"express-sst-app\\\",\\\"stage\\\":\\\"production\\\"}\"}]}]",
+                        "cpu": "256",
+                        "ephemeralStorage": {
+                            "__defaults": [],
+                            "sizeInGib": 21
+                        },
+                        "executionRoleArn": "arn:aws:iam::333117039082:role/express-sst-app-production-MyServiceExecutionRole-saeast1",
+                        "family": "express-sst-app-production-MyClusterCluster-MyService",
+                        "memory": "512",
+                        "networkMode": "awsvpc",
+                        "requiresCompatibilities": [
+                            "FARGATE"
+                        ],
+                        "runtimePlatform": {
+                            "__defaults": [],
+                            "cpuArchitecture": "X86_64",
+                            "operatingSystemFamily": "LINUX"
+                        },
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "taskRoleArn": "arn:aws:iam::333117039082:role/express-sst-app-production-MyServiceTaskRole-saeast1",
+                        "trackLatest": true
+                    },
+                    "outputs": {
+                        "__meta": "{\"schema_version\":\"1\"}",
+                        "arn": "arn:aws:ecs:sa-east-1:333117039082:task-definition/express-sst-app-production-MyClusterCluster-MyService:1",
+                        "arnWithoutRevision": "arn:aws:ecs:sa-east-1:333117039082:task-definition/express-sst-app-production-MyClusterCluster-MyService",
+                        "containerDefinitions": "[{\"cpu\":0,\"environment\":[{\"name\":\"SST_RESOURCE_App\",\"value\":\"{\\\"name\\\":\\\"express-sst-app\\\",\\\"stage\\\":\\\"production\\\"}\"},{\"name\":\"SST_RESOURCE_MyBucket\",\"value\":\"{\\\"name\\\":\\\"express-sst-app-production-mybucket-fefssduh\\\",\\\"type\\\":\\\"sst:aws:Bucket\\\"}\"}],\"essential\":true,\"image\":\"333117039082.dkr.ecr.sa-east-1.amazonaws.com/sst-asset@sha256:5aae11925db848e8b62a0c9d6c4f556cc61c6715fe1cbee7eab5010c69183b1a\",\"logConfiguration\":{\"logDriver\":\"awslogs\",\"options\":{\"awslogs-group\":\"/sst/cluster/express-sst-app-production-MyClusterCluster/MyService\",\"awslogs-region\":\"sa-east-1\",\"awslogs-stream-prefix\":\"/service\"}},\"mountPoints\":[],\"name\":\"MyService\",\"portMappings\":[{\"containerPort\":80,\"hostPort\":80,\"protocol\":\"tcp\"}],\"pseudoTerminal\":true,\"systemControls\":[],\"volumesFrom\":[]}]",
+                        "cpu": "256",
+                        "ephemeralStorage": {
+                            "sizeInGib": 21
+                        },
+                        "executionRoleArn": "arn:aws:iam::333117039082:role/express-sst-app-production-MyServiceExecutionRole-saeast1",
+                        "family": "express-sst-app-production-MyClusterCluster-MyService",
+                        "id": "express-sst-app-production-MyClusterCluster-MyService",
+                        "inferenceAccelerators": [],
+                        "ipcMode": "",
+                        "memory": "512",
+                        "networkMode": "awsvpc",
+                        "pidMode": "",
+                        "placementConstraints": [],
+                        "proxyConfiguration": null,
+                        "requiresCompatibilities": [
+                            "FARGATE"
+                        ],
+                        "revision": 1,
+                        "runtimePlatform": {
+                            "cpuArchitecture": "X86_64",
+                            "operatingSystemFamily": "LINUX"
+                        },
+                        "skipDestroy": false,
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "taskRoleArn": "arn:aws:iam::333117039082:role/express-sst-app-production-MyServiceTaskRole-saeast1",
+                        "trackLatest": true,
+                        "volumes": []
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$random:index/randomId:RandomId::MyBucketId",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketCorsConfigurationV2:BucketCorsConfigurationV2::MyBucketCors",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketPolicy:BucketPolicy::MyBucketPolicy",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:iam/role:Role::MyServiceExecutionRole",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Cluster$aws:ecs/cluster:Cluster::MyClusterCluster",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:iam/role:Role::MyServiceTaskRole",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$docker:index/image:Image::MyServiceImage",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:cloudwatch/logGroup:LogGroup::MyServiceLogGroup",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketPublicAccessBlock:BucketPublicAccessBlock::MyBucketPublicAccessBlock"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "containerDefinitions": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketV2:BucketV2::MyBucketBucket",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketCorsConfigurationV2:BucketCorsConfigurationV2::MyBucketCors",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketPublicAccessBlock:BucketPublicAccessBlock::MyBucketPublicAccessBlock",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$aws:s3/bucketPolicy:BucketPolicy::MyBucketPolicy",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$docker:index/image:Image::MyServiceImage",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:cloudwatch/logGroup:LogGroup::MyServiceLogGroup",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Bucket$random:index/randomId:RandomId::MyBucketId"
+                        ],
+                        "cpu": [],
+                        "ephemeralStorage": [],
+                        "executionRoleArn": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:iam/role:Role::MyServiceExecutionRole"
+                        ],
+                        "family": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Cluster$aws:ecs/cluster:Cluster::MyClusterCluster"
+                        ],
+                        "memory": [],
+                        "networkMode": [],
+                        "requiresCompatibilities": [],
+                        "runtimePlatform": [],
+                        "taskRoleArn": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:iam/role:Role::MyServiceTaskRole"
+                        ],
+                        "trackLatest": []
+                    },
+                    "created": "2024-07-23T16:20:31.876306Z",
+                    "modified": "2024-07-23T16:20:31.876306Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#498,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/natGateway:NatGateway::MyVpcNatGateway2",
+                    "custom": true,
+                    "id": "nat-045d14813713008d9",
+                    "type": "aws:ec2/natGateway:NatGateway",
+                    "inputs": {
+                        "__defaults": [
+                            "connectivityType"
+                        ],
+                        "allocationId": "eipalloc-0573b8ac95222d440",
+                        "connectivityType": "public",
+                        "subnetId": "subnet-02fa1d20beebe3abd",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcNatGateway2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcNatGateway2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1800000000000,\"update\":600000000000}}",
+                        "allocationId": "eipalloc-0573b8ac95222d440",
+                        "associationId": "eipassoc-07b79bf85ca24855e",
+                        "connectivityType": "public",
+                        "id": "nat-045d14813713008d9",
+                        "networkInterfaceId": "eni-076e7f9ff3edb80f2",
+                        "privateIp": "10.0.2.185",
+                        "publicIp": "18.231.238.147",
+                        "secondaryAllocationIds": [],
+                        "secondaryPrivateIpAddressCount": 0,
+                        "secondaryPrivateIpAddresses": [],
+                        "subnetId": "subnet-02fa1d20beebe3abd",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcNatGateway2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcNatGateway2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/eip:Eip::MyVpcElasticIp2",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet2"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "allocationId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/eip:Eip::MyVpcElasticIp2"
+                        ],
+                        "subnetId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet2"
+                        ],
+                        "tags": []
+                    },
+                    "created": "2024-07-23T16:23:22.932006Z",
+                    "modified": "2024-07-23T16:23:22.932006Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/natGateway.ts#199,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/natGateway:NatGateway::MyVpcNatGateway1",
+                    "custom": true,
+                    "id": "nat-06ca9cb1a237f60f3",
+                    "type": "aws:ec2/natGateway:NatGateway",
+                    "inputs": {
+                        "__defaults": [
+                            "connectivityType"
+                        ],
+                        "allocationId": "eipalloc-053de28a553efe995",
+                        "connectivityType": "public",
+                        "subnetId": "subnet-03f63cd09377b6447",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcNatGateway1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcNatGateway1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":1800000000000,\"update\":600000000000}}",
+                        "allocationId": "eipalloc-053de28a553efe995",
+                        "associationId": "eipassoc-0d462726487f0678c",
+                        "connectivityType": "public",
+                        "id": "nat-06ca9cb1a237f60f3",
+                        "networkInterfaceId": "eni-0ebe412934de72775",
+                        "privateIp": "10.0.1.58",
+                        "publicIp": "54.232.76.62",
+                        "secondaryAllocationIds": [],
+                        "secondaryPrivateIpAddressCount": 0,
+                        "secondaryPrivateIpAddresses": [],
+                        "subnetId": "subnet-03f63cd09377b6447",
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcNatGateway1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcNatGateway1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/eip:Eip::MyVpcElasticIp1",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet1"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "allocationId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/eip:Eip::MyVpcElasticIp1"
+                        ],
+                        "subnetId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet1"
+                        ],
+                        "tags": []
+                    },
+                    "created": "2024-07-23T16:23:22.932045Z",
+                    "modified": "2024-07-23T16:23:22.932045Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/natGateway.ts#199,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPrivateRouteTable2",
+                    "custom": true,
+                    "id": "rtb-06f9b675b958ea3f5",
+                    "type": "aws:ec2/routeTable:RouteTable",
+                    "inputs": {
+                        "__defaults": [],
+                        "routes": [
+                            {
+                                "__defaults": [],
+                                "cidrBlock": "0.0.0.0/0",
+                                "natGatewayId": "nat-045d14813713008d9"
+                            }
+                        ],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPrivateRouteTable2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPrivateRouteTable2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:route-table/rtb-06f9b675b958ea3f5",
+                        "id": "rtb-06f9b675b958ea3f5",
+                        "ownerId": "333117039082",
+                        "propagatingVgws": [],
+                        "routes": [
+                            {
+                                "carrierGatewayId": "",
+                                "cidrBlock": "0.0.0.0/0",
+                                "coreNetworkArn": "",
+                                "destinationPrefixListId": "",
+                                "egressOnlyGatewayId": "",
+                                "gatewayId": "",
+                                "ipv6CidrBlock": "",
+                                "localGatewayId": "",
+                                "natGatewayId": "nat-045d14813713008d9",
+                                "networkInterfaceId": "",
+                                "transitGatewayId": "",
+                                "vpcEndpointId": "",
+                                "vpcPeeringConnectionId": ""
+                            }
+                        ],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPrivateRouteTable2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPrivateRouteTable2",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/natGateway:NatGateway::MyVpcNatGateway2",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "routes": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/natGateway:NatGateway::MyVpcNatGateway2"
+                        ],
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:23:24.28673Z",
+                    "modified": "2024-07-23T16:23:24.28673Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/routeTable.ts#218,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPrivateRouteTable1",
+                    "custom": true,
+                    "id": "rtb-07a0f8ccdbb355612",
+                    "type": "aws:ec2/routeTable:RouteTable",
+                    "inputs": {
+                        "__defaults": [],
+                        "routes": [
+                            {
+                                "__defaults": [],
+                                "cidrBlock": "0.0.0.0/0",
+                                "natGatewayId": "nat-06ca9cb1a237f60f3"
+                            }
+                        ],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPrivateRouteTable1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPrivateRouteTable1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                        "arn": "arn:aws:ec2:sa-east-1:333117039082:route-table/rtb-07a0f8ccdbb355612",
+                        "id": "rtb-07a0f8ccdbb355612",
+                        "ownerId": "333117039082",
+                        "propagatingVgws": [],
+                        "routes": [
+                            {
+                                "carrierGatewayId": "",
+                                "cidrBlock": "0.0.0.0/0",
+                                "coreNetworkArn": "",
+                                "destinationPrefixListId": "",
+                                "egressOnlyGatewayId": "",
+                                "gatewayId": "",
+                                "ipv6CidrBlock": "",
+                                "localGatewayId": "",
+                                "natGatewayId": "nat-06ca9cb1a237f60f3",
+                                "networkInterfaceId": "",
+                                "transitGatewayId": "",
+                                "vpcEndpointId": "",
+                                "vpcPeeringConnectionId": ""
+                            }
+                        ],
+                        "tags": {
+                            "Name": "express-sst-app-production-MyVpcPrivateRouteTable1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "Name": "express-sst-app-production-MyVpcPrivateRouteTable1",
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/natGateway:NatGateway::MyVpcNatGateway1",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "routes": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/natGateway:NatGateway::MyVpcNatGateway1"
+                        ],
+                        "tags": [],
+                        "vpcId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/vpc:Vpc::MyVpcVpc"
+                        ]
+                    },
+                    "created": "2024-07-23T16:23:24.478685Z",
+                    "modified": "2024-07-23T16:23:24.478685Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/routeTable.ts#218,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTableAssociation:RouteTableAssociation::MyVpcPrivateRouteTableAssociation2",
+                    "custom": true,
+                    "id": "rtbassoc-0afb55f52bc63d4ed",
+                    "type": "aws:ec2/routeTableAssociation:RouteTableAssociation",
+                    "inputs": {
+                        "__defaults": [],
+                        "routeTableId": "rtb-06f9b675b958ea3f5",
+                        "subnetId": "subnet-097aab176aa107992"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                        "gatewayId": "",
+                        "id": "rtbassoc-0afb55f52bc63d4ed",
+                        "routeTableId": "rtb-06f9b675b958ea3f5",
+                        "subnetId": "subnet-097aab176aa107992"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPrivateRouteTable2",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet2"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "routeTableId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPrivateRouteTable2"
+                        ],
+                        "subnetId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet2"
+                        ]
+                    },
+                    "created": "2024-07-23T16:23:24.669836Z",
+                    "modified": "2024-07-23T16:23:24.669836Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/routeTableAssociation.ts#117,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTableAssociation:RouteTableAssociation::MyVpcPrivateRouteTableAssociation1",
+                    "custom": true,
+                    "id": "rtbassoc-01337981a0bc66a41",
+                    "type": "aws:ec2/routeTableAssociation:RouteTableAssociation",
+                    "inputs": {
+                        "__defaults": [],
+                        "routeTableId": "rtb-07a0f8ccdbb355612",
+                        "subnetId": "subnet-07da5b9069fde0a09"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"delete\":300000000000,\"update\":120000000000}}",
+                        "gatewayId": "",
+                        "id": "rtbassoc-01337981a0bc66a41",
+                        "routeTableId": "rtb-07a0f8ccdbb355612",
+                        "subnetId": "subnet-07da5b9069fde0a09"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Vpc::MyVpc",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet1",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPrivateRouteTable1"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "routeTableId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/routeTable:RouteTable::MyVpcPrivateRouteTable1"
+                        ],
+                        "subnetId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet1"
+                        ]
+                    },
+                    "created": "2024-07-23T16:23:24.855592Z",
+                    "modified": "2024-07-23T16:23:24.855592Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/ec2/routeTableAssociation.ts#117,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:lb/loadBalancer:LoadBalancer::MyServiceLoadBalancer",
+                    "custom": true,
+                    "id": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:loadbalancer/app/producti-MyServiceLoadBa/06aaf41bc24de245",
+                    "type": "aws:lb/loadBalancer:LoadBalancer",
+                    "inputs": {
+                        "__defaults": [
+                            "clientKeepAlive",
+                            "desyncMitigationMode",
+                            "dnsRecordClientRoutingPolicy",
+                            "dropInvalidHeaderFields",
+                            "enableDeletionProtection",
+                            "enableHttp2",
+                            "enableTlsVersionAndCipherSuiteHeaders",
+                            "enableWafFailOpen",
+                            "enableXffClientPort",
+                            "idleTimeout",
+                            "preserveHostHeader",
+                            "xffHeaderProcessingMode"
+                        ],
+                        "clientKeepAlive": 3600,
+                        "desyncMitigationMode": "defensive",
+                        "dnsRecordClientRoutingPolicy": "any_availability_zone",
+                        "dropInvalidHeaderFields": false,
+                        "enableCrossZoneLoadBalancing": true,
+                        "enableDeletionProtection": false,
+                        "enableHttp2": true,
+                        "enableTlsVersionAndCipherSuiteHeaders": false,
+                        "enableWafFailOpen": false,
+                        "enableXffClientPort": false,
+                        "idleTimeout": 60,
+                        "internal": false,
+                        "loadBalancerType": "application",
+                        "name": "producti-MyServiceLoadBa",
+                        "preserveHostHeader": false,
+                        "securityGroups": [
+                            "sg-098361e7d34c8d4c5"
+                        ],
+                        "subnets": [
+                            "subnet-03f63cd09377b6447",
+                            "subnet-02fa1d20beebe3abd"
+                        ],
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "xffHeaderProcessingMode": "append"
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"delete\":600000000000,\"update\":600000000000}}",
+                        "accessLogs": {
+                            "bucket": "",
+                            "enabled": false,
+                            "prefix": ""
+                        },
+                        "arn": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:loadbalancer/app/producti-MyServiceLoadBa/06aaf41bc24de245",
+                        "arnSuffix": "app/producti-MyServiceLoadBa/06aaf41bc24de245",
+                        "clientKeepAlive": 3600,
+                        "connectionLogs": {
+                            "bucket": "",
+                            "enabled": false,
+                            "prefix": ""
+                        },
+                        "customerOwnedIpv4Pool": "",
+                        "desyncMitigationMode": "defensive",
+                        "dnsName": "producti-MyServiceLoadBa-2064786972.sa-east-1.elb.amazonaws.com",
+                        "dropInvalidHeaderFields": false,
+                        "enableCrossZoneLoadBalancing": true,
+                        "enableDeletionProtection": false,
+                        "enableHttp2": true,
+                        "enableTlsVersionAndCipherSuiteHeaders": false,
+                        "enableWafFailOpen": false,
+                        "enableXffClientPort": false,
+                        "enforceSecurityGroupInboundRulesOnPrivateLinkTraffic": "",
+                        "id": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:loadbalancer/app/producti-MyServiceLoadBa/06aaf41bc24de245",
+                        "idleTimeout": 60,
+                        "internal": false,
+                        "ipAddressType": "ipv4",
+                        "loadBalancerType": "application",
+                        "name": "producti-MyServiceLoadBa",
+                        "namePrefix": "",
+                        "preserveHostHeader": false,
+                        "securityGroups": [
+                            "sg-098361e7d34c8d4c5"
+                        ],
+                        "subnetMappings": [
+                            {
+                                "allocationId": "",
+                                "ipv6Address": "",
+                                "outpostId": "",
+                                "privateIpv4Address": "",
+                                "subnetId": "subnet-02fa1d20beebe3abd"
+                            },
+                            {
+                                "allocationId": "",
+                                "ipv6Address": "",
+                                "outpostId": "",
+                                "privateIpv4Address": "",
+                                "subnetId": "subnet-03f63cd09377b6447"
+                            }
+                        ],
+                        "subnets": [
+                            "subnet-03f63cd09377b6447",
+                            "subnet-02fa1d20beebe3abd"
+                        ],
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "vpcId": "vpc-0f1bad97ab18329d9",
+                        "xffHeaderProcessingMode": "append",
+                        "zoneId": "Z2P70J7HTTTPLU"
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/securityGroup:SecurityGroup::MyVpcSecurityGroup",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet1",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet2"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "enableCrossZoneLoadBalancing": [],
+                        "internal": [],
+                        "loadBalancerType": [],
+                        "name": [],
+                        "securityGroups": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/securityGroup:SecurityGroup::MyVpcSecurityGroup"
+                        ],
+                        "subnets": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet1",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPublicSubnet2"
+                        ]
+                    },
+                    "created": "2024-07-23T17:15:03.685789Z",
+                    "modified": "2024-07-23T17:15:03.685789Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#339,28"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:lb/listener:Listener::MyServiceListenerHTTP80",
+                    "custom": true,
+                    "id": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:listener/app/producti-MyServiceLoadBa/06aaf41bc24de245/5ec0aaa2a0cab2d9",
+                    "type": "aws:lb/listener:Listener",
+                    "inputs": {
+                        "__defaults": [],
+                        "defaultActions": [
+                            {
+                                "__defaults": [],
+                                "targetGroupArn": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:targetgroup/HTTP20240723161942071000000001/cb4a78c00768df83",
+                                "type": "forward"
+                            }
+                        ],
+                        "loadBalancerArn": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:loadbalancer/app/producti-MyServiceLoadBa/06aaf41bc24de245",
+                        "port": 80,
+                        "protocol": "HTTP",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":300000000000,\"update\":300000000000}}",
+                        "alpnPolicy": null,
+                        "arn": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:listener/app/producti-MyServiceLoadBa/06aaf41bc24de245/5ec0aaa2a0cab2d9",
+                        "certificateArn": null,
+                        "defaultActions": [
+                            {
+                                "authenticateCognito": null,
+                                "authenticateOidc": null,
+                                "fixedResponse": null,
+                                "forward": null,
+                                "order": 1,
+                                "redirect": null,
+                                "targetGroupArn": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:targetgroup/HTTP20240723161942071000000001/cb4a78c00768df83",
+                                "type": "forward"
+                            }
+                        ],
+                        "id": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:listener/app/producti-MyServiceLoadBa/06aaf41bc24de245/5ec0aaa2a0cab2d9",
+                        "loadBalancerArn": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:loadbalancer/app/producti-MyServiceLoadBa/06aaf41bc24de245",
+                        "mutualAuthentication": null,
+                        "port": 80,
+                        "protocol": "HTTP",
+                        "sslPolicy": "",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:lb/loadBalancer:LoadBalancer::MyServiceLoadBalancer",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:lb/targetGroup:TargetGroup::MyServiceTargetHTTP80"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "defaultActions": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:lb/targetGroup:TargetGroup::MyServiceTargetHTTP80"
+                        ],
+                        "loadBalancerArn": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:lb/loadBalancer:LoadBalancer::MyServiceLoadBalancer"
+                        ],
+                        "port": [],
+                        "protocol": []
+                    },
+                    "created": "2024-07-23T17:15:04.36106Z",
+                    "modified": "2024-07-23T17:15:04.36106Z",
+                    "sourcePosition": "project:///platform/node_modules/@pulumi/lb/listener.ts#352,9"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:ecs/service:Service::MyServiceService",
+                    "custom": true,
+                    "id": "arn:aws:ecs:sa-east-1:333117039082:service/express-sst-app-production-MyClusterCluster/MyService",
+                    "type": "aws:ecs/service:Service",
+                    "inputs": {
+                        "__defaults": [
+                            "deploymentMaximumPercent",
+                            "deploymentMinimumHealthyPercent",
+                            "enableEcsManagedTags",
+                            "enableExecuteCommand",
+                            "schedulingStrategy",
+                            "waitForSteadyState"
+                        ],
+                        "cluster": "arn:aws:ecs:sa-east-1:333117039082:cluster/express-sst-app-production-MyClusterCluster",
+                        "deploymentCircuitBreaker": {
+                            "__defaults": [],
+                            "enable": true,
+                            "rollback": true
+                        },
+                        "deploymentMaximumPercent": 200,
+                        "deploymentMinimumHealthyPercent": 100,
+                        "desiredCount": 1,
+                        "enableEcsManagedTags": false,
+                        "enableExecuteCommand": false,
+                        "launchType": "FARGATE",
+                        "loadBalancers": [
+                            {
+                                "__defaults": [],
+                                "containerName": "MyService",
+                                "containerPort": 80,
+                                "targetGroupArn": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:targetgroup/HTTP20240723161942071000000001/cb4a78c00768df83"
+                            }
+                        ],
+                        "name": "MyService",
+                        "networkConfiguration": {
+                            "__defaults": [],
+                            "assignPublicIp": false,
+                            "securityGroups": [
+                                "sg-098361e7d34c8d4c5"
+                            ],
+                            "subnets": [
+                                "subnet-07da5b9069fde0a09",
+                                "subnet-097aab176aa107992"
+                            ]
+                        },
+                        "schedulingStrategy": "REPLICA",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "taskDefinition": "arn:aws:ecs:sa-east-1:333117039082:task-definition/express-sst-app-production-MyClusterCluster-MyService:1",
+                        "waitForSteadyState": false
+                    },
+                    "outputs": {
+                        "__meta": "{\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":1200000000000,\"delete\":1200000000000,\"update\":1200000000000}}",
+                        "alarms": null,
+                        "capacityProviderStrategies": [],
+                        "cluster": "arn:aws:ecs:sa-east-1:333117039082:cluster/express-sst-app-production-MyClusterCluster",
+                        "deploymentCircuitBreaker": {
+                            "enable": true,
+                            "rollback": true
+                        },
+                        "deploymentController": {
+                            "type": "ECS"
+                        },
+                        "deploymentMaximumPercent": 200,
+                        "deploymentMinimumHealthyPercent": 100,
+                        "desiredCount": 1,
+                        "enableEcsManagedTags": false,
+                        "enableExecuteCommand": false,
+                        "healthCheckGracePeriodSeconds": 0,
+                        "iamRole": "/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+                        "id": "arn:aws:ecs:sa-east-1:333117039082:service/express-sst-app-production-MyClusterCluster/MyService",
+                        "launchType": "FARGATE",
+                        "loadBalancers": [
+                            {
+                                "containerName": "MyService",
+                                "containerPort": 80,
+                                "elbName": "",
+                                "targetGroupArn": "arn:aws:elasticloadbalancing:sa-east-1:333117039082:targetgroup/HTTP20240723161942071000000001/cb4a78c00768df83"
+                            }
+                        ],
+                        "name": "MyService",
+                        "networkConfiguration": {
+                            "assignPublicIp": false,
+                            "securityGroups": [
+                                "sg-098361e7d34c8d4c5"
+                            ],
+                            "subnets": [
+                                "subnet-097aab176aa107992",
+                                "subnet-07da5b9069fde0a09"
+                            ]
+                        },
+                        "orderedPlacementStrategies": [],
+                        "placementConstraints": [],
+                        "platformVersion": "LATEST",
+                        "propagateTags": "NONE",
+                        "schedulingStrategy": "REPLICA",
+                        "serviceRegistries": null,
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "taskDefinition": "arn:aws:ecs:sa-east-1:333117039082:task-definition/express-sst-app-production-MyClusterCluster-MyService:1",
+                        "triggers": {},
+                        "waitForSteadyState": false
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet1",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet2",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/securityGroup:SecurityGroup::MyVpcSecurityGroup",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:ecs/taskDefinition:TaskDefinition::MyServiceTask",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Cluster$aws:ecs/cluster:Cluster::MyClusterCluster",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:lb/targetGroup:TargetGroup::MyServiceTargetHTTP80"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "cluster": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Cluster$aws:ecs/cluster:Cluster::MyClusterCluster"
+                        ],
+                        "deploymentCircuitBreaker": [],
+                        "desiredCount": [],
+                        "launchType": [],
+                        "loadBalancers": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:lb/targetGroup:TargetGroup::MyServiceTargetHTTP80"
+                        ],
+                        "name": [],
+                        "networkConfiguration": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet1",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/subnet:Subnet::MyVpcPrivateSubnet2",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Vpc$aws:ec2/securityGroup:SecurityGroup::MyVpcSecurityGroup"
+                        ],
+                        "taskDefinition": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:ecs/taskDefinition:TaskDefinition::MyServiceTask"
+                        ]
+                    },
+                    "created": "2024-07-23T17:32:48.103378Z",
+                    "modified": "2024-07-23T17:32:48.103378Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#563,14"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/target:Target::MyServiceAutoScalingTarget",
+                    "custom": true,
+                    "id": "service/express-sst-app-production-MyClusterCluster/MyService",
+                    "type": "aws:appautoscaling/target:Target",
+                    "inputs": {
+                        "__defaults": [],
+                        "maxCapacity": 1,
+                        "minCapacity": 1,
+                        "resourceId": "service/express-sst-app-production-MyClusterCluster/MyService",
+                        "scalableDimension": "ecs:service:DesiredCount",
+                        "serviceNamespace": "ecs",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "outputs": {
+                        "arn": "arn:aws:application-autoscaling:sa-east-1:333117039082:scalable-target/0ec59920ccd977f6454b81a91c287f4da066",
+                        "id": "service/express-sst-app-production-MyClusterCluster/MyService",
+                        "maxCapacity": 1,
+                        "minCapacity": 1,
+                        "resourceId": "service/express-sst-app-production-MyClusterCluster/MyService",
+                        "roleArn": "arn:aws:iam::333117039082:role/aws-service-role/ecs.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_ECSService",
+                        "scalableDimension": "ecs:service:DesiredCount",
+                        "serviceNamespace": "ecs",
+                        "tags": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        },
+                        "tagsAll": {
+                            "sst:app": "express-sst-app",
+                            "sst:stage": "production"
+                        }
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:ecs/service:Service::MyServiceService",
+                        "urn:pulumi:production::express-sst-app::sst:aws:Cluster$aws:ecs/cluster:Cluster::MyClusterCluster"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "maxCapacity": [],
+                        "minCapacity": [],
+                        "resourceId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Cluster$aws:ecs/cluster:Cluster::MyClusterCluster",
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:ecs/service:Service::MyServiceService"
+                        ],
+                        "scalableDimension": [],
+                        "serviceNamespace": []
+                    },
+                    "created": "2024-07-23T17:34:43.281967Z",
+                    "modified": "2024-07-23T17:34:43.281967Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#595,22"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/policy:Policy::MyServiceAutoScalingMemoryPolicy",
+                    "custom": true,
+                    "id": "express-sst-app-production-MyServiceAutoScalingMemoryPolicy",
+                    "type": "aws:appautoscaling/policy:Policy",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "express-sst-app-production-MyServiceAutoScalingMemoryPolicy",
+                        "policyType": "TargetTrackingScaling",
+                        "resourceId": "service/express-sst-app-production-MyClusterCluster/MyService",
+                        "scalableDimension": "ecs:service:DesiredCount",
+                        "serviceNamespace": "ecs",
+                        "targetTrackingScalingPolicyConfiguration": {
+                            "__defaults": [
+                                "disableScaleIn"
+                            ],
+                            "disableScaleIn": false,
+                            "predefinedMetricSpecification": {
+                                "__defaults": [],
+                                "predefinedMetricType": "ECSServiceAverageMemoryUtilization"
+                            },
+                            "targetValue": 70
+                        }
+                    },
+                    "outputs": {
+                        "alarmArns": [
+                            "arn:aws:cloudwatch:sa-east-1:333117039082:alarm:TargetTracking-service/express-sst-app-production-MyClusterCluster/MyService-AlarmHigh-b25e78c9-8ee9-4aa2-9fe9-316291d52b58",
+                            "arn:aws:cloudwatch:sa-east-1:333117039082:alarm:TargetTracking-service/express-sst-app-production-MyClusterCluster/MyService-AlarmLow-e03193a7-a34d-4831-a393-9d8abb7073a7"
+                        ],
+                        "arn": "arn:aws:autoscaling:sa-east-1:333117039082:scalingPolicy:9920ccd9-77f6-454b-81a9-1c287f4da066:resource/ecs/service/express-sst-app-production-MyClusterCluster/MyService:policyName/express-sst-app-production-MyServiceAutoScalingMemoryPolicy",
+                        "id": "express-sst-app-production-MyServiceAutoScalingMemoryPolicy",
+                        "name": "express-sst-app-production-MyServiceAutoScalingMemoryPolicy",
+                        "policyType": "TargetTrackingScaling",
+                        "resourceId": "service/express-sst-app-production-MyClusterCluster/MyService",
+                        "scalableDimension": "ecs:service:DesiredCount",
+                        "serviceNamespace": "ecs",
+                        "stepScalingPolicyConfiguration": null,
+                        "targetTrackingScalingPolicyConfiguration": {
+                            "customizedMetricSpecification": null,
+                            "disableScaleIn": false,
+                            "predefinedMetricSpecification": {
+                                "predefinedMetricType": "ECSServiceAverageMemoryUtilization",
+                                "resourceLabel": ""
+                            },
+                            "scaleInCooldown": 0,
+                            "scaleOutCooldown": 0,
+                            "targetValue": 70
+                        }
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/target:Target::MyServiceAutoScalingTarget"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "name": [],
+                        "policyType": [],
+                        "resourceId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/target:Target::MyServiceAutoScalingTarget"
+                        ],
+                        "scalableDimension": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/target:Target::MyServiceAutoScalingTarget"
+                        ],
+                        "serviceNamespace": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/target:Target::MyServiceAutoScalingTarget"
+                        ],
+                        "targetTrackingScalingPolicyConfiguration": []
+                    },
+                    "created": "2024-07-23T17:34:43.87133Z",
+                    "modified": "2024-07-23T17:34:43.87133Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#624,7"
+                },
+                {
+                    "urn": "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/policy:Policy::MyServiceAutoScalingCpuPolicy",
+                    "custom": true,
+                    "id": "express-sst-app-production-MyServiceAutoScalingCpuPolicy",
+                    "type": "aws:appautoscaling/policy:Policy",
+                    "inputs": {
+                        "__defaults": [],
+                        "name": "express-sst-app-production-MyServiceAutoScalingCpuPolicy",
+                        "policyType": "TargetTrackingScaling",
+                        "resourceId": "service/express-sst-app-production-MyClusterCluster/MyService",
+                        "scalableDimension": "ecs:service:DesiredCount",
+                        "serviceNamespace": "ecs",
+                        "targetTrackingScalingPolicyConfiguration": {
+                            "__defaults": [
+                                "disableScaleIn"
+                            ],
+                            "disableScaleIn": false,
+                            "predefinedMetricSpecification": {
+                                "__defaults": [],
+                                "predefinedMetricType": "ECSServiceAverageCPUUtilization"
+                            },
+                            "targetValue": 70
+                        }
+                    },
+                    "outputs": {
+                        "alarmArns": [
+                            "arn:aws:cloudwatch:sa-east-1:333117039082:alarm:TargetTracking-service/express-sst-app-production-MyClusterCluster/MyService-AlarmHigh-6713db94-a9fb-4f65-aad5-fcf2a11bf9b5",
+                            "arn:aws:cloudwatch:sa-east-1:333117039082:alarm:TargetTracking-service/express-sst-app-production-MyClusterCluster/MyService-AlarmLow-02771204-50a1-4219-a6b9-900200e94d09"
+                        ],
+                        "arn": "arn:aws:autoscaling:sa-east-1:333117039082:scalingPolicy:9920ccd9-77f6-454b-81a9-1c287f4da066:resource/ecs/service/express-sst-app-production-MyClusterCluster/MyService:policyName/express-sst-app-production-MyServiceAutoScalingCpuPolicy",
+                        "id": "express-sst-app-production-MyServiceAutoScalingCpuPolicy",
+                        "name": "express-sst-app-production-MyServiceAutoScalingCpuPolicy",
+                        "policyType": "TargetTrackingScaling",
+                        "resourceId": "service/express-sst-app-production-MyClusterCluster/MyService",
+                        "scalableDimension": "ecs:service:DesiredCount",
+                        "serviceNamespace": "ecs",
+                        "stepScalingPolicyConfiguration": null,
+                        "targetTrackingScalingPolicyConfiguration": {
+                            "customizedMetricSpecification": null,
+                            "disableScaleIn": false,
+                            "predefinedMetricSpecification": {
+                                "predefinedMetricType": "ECSServiceAverageCPUUtilization",
+                                "resourceLabel": ""
+                            },
+                            "scaleInCooldown": 0,
+                            "scaleOutCooldown": 0,
+                            "targetValue": 70
+                        }
+                    },
+                    "parent": "urn:pulumi:production::express-sst-app::sst:aws:Service::MyService",
+                    "dependencies": [
+                        "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/target:Target::MyServiceAutoScalingTarget"
+                    ],
+                    "provider": "urn:pulumi:production::express-sst-app::pulumi:providers:aws::default_6_45_0::f9458268-f29e-49ce-898b-ce3f96221bde",
+                    "propertyDependencies": {
+                        "name": [],
+                        "policyType": [],
+                        "resourceId": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/target:Target::MyServiceAutoScalingTarget"
+                        ],
+                        "scalableDimension": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/target:Target::MyServiceAutoScalingTarget"
+                        ],
+                        "serviceNamespace": [
+                            "urn:pulumi:production::express-sst-app::sst:aws:Service$aws:appautoscaling/target:Target::MyServiceAutoScalingTarget"
+                        ],
+                        "targetTrackingScalingPolicyConfiguration": []
+                    },
+                    "created": "2024-07-23T17:34:44.004573Z",
+                    "modified": "2024-07-23T17:34:44.004573Z",
+                    "sourcePosition": "project:///../file:/Users/arthursantos/Desktop/learning/ruby/database-benchmark/express-sst-app/.sst/platform/src/components/aws/service.ts#607,7"
+                }
+            ]
+        }
+    }
+}

@@ -1,7 +1,7 @@
 {
     "kind": "update",
-    "startTime": 1721751173,
-    "message": "chore: Add Express SST app files and configuration",
+    "startTime": 1721751564,
+    "message": "chore: Update Express SST app to use port 8080 instead of 80",
     "environment": {
         "exec.kind": "auto.local",
         "git.author": "Arthur Santos",
@@ -9,7 +9,7 @@
         "git.committer": "Arthur Santos",
         "git.committer.email": "arthursantosdeveloper@gmail.com",
         "git.dirty": "true",
-        "git.head": "ae2dc80097add0d0105d7e26ef2222ef8d6e5030",
+        "git.head": "c068af7987412bc32efa98f26a1512169399d47d",
         "git.headName": "refs/heads/master",
         "pulumi.arch": "arm64",
         "pulumi.env.PULUMI_CONFIG_PASSPHRASE": "set",
@@ -31,13 +31,14 @@
         "vcs.root": "express-sst-app/.sst"
     },
     "config": {
-        "aws:defaultTags": "{\"tags\":{\"sst:app\":\"express-sst-app\",\"sst:stage\":\"arthursantos\"}}",
+        "aws:defaultTags": "{\"tags\":{\"sst:app\":\"express-sst-app\",\"sst:stage\":\"production\"}}",
         "aws:region": "sa-east-1"
     },
     "version": 0,
     "result": "succeeded",
-    "endTime": 1721751307,
+    "endTime": 1721756084,
     "resourceChanges": {
-        "create": 33
+        "create": 43,
+        "same": 1
     }
 }
