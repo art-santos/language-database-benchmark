@@ -1,0 +1,11 @@
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/rust-mongo/target/debug/deps/liburl-7bd47231c197ea4c.rmeta: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/host.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/origin.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/parser.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/path_segments.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/slicing.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/quirks.rs
+
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/rust-mongo/target/debug/deps/url-7bd47231c197ea4c.d: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/host.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/origin.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/parser.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/path_segments.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/slicing.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/quirks.rs
+
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/lib.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/host.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/origin.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/parser.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/path_segments.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/slicing.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/url-2.5.2/src/quirks.rs:
