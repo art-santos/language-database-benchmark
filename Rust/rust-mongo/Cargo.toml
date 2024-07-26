@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 mongodb = "3.0.0"
 soup = "0.5"
+scraper = "=0.19.1"
 reqwest = { version = "0.12", features = ["json"] }
 bson = { version = "2", features = ["chrono-0_4"] } # Needed for using chrono datetime in doc
 tokio = "1"

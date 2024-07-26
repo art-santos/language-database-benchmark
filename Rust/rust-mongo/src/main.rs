@@ -5,6 +5,10 @@ use mongodb::{
 };
 use std::env;
 use std::collections::HashMap;
+use scraper::Html;
+use scraper::Selector;
+
+
 
 extern crate reqwest;
 extern crate soup;
@@ -38,6 +42,23 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     //add a new movie to the collection with the ip address
     let ip = resp.get("origin").unwrap();
     println!("ip address: {}", ip);
+
+            let html = r#"
+            <!DOCTYPE html>
+            <meta charset="utf-8">
+            <title>Hello, world!</title>
+            <h1 class="foo">Hello, <i>world!</i></h1>
+        "#;
+
+    let selector = Selector::parse("h1.foo").unwrap();
+
+    let document = Html::parse_document(html);
+
+    let h1 = document.select(&selector).next().unwrap();
+
+    
+    println!("{:#?} --->", h1.text().collect::<String>());
+    println!("{:#?}", document);
 
     Ok(())
 }
