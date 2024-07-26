@@ -31,34 +31,21 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Print the document
     println!("Found a movie:\n{:#?}", my_movie);
 
-    // Make a request to httpbin.org and print the response
-    let resp = reqwest::get("https://httpbin.org/ip")
+    // let document = Html::parse_document(html);
+
+    // let h1 = document.select(&selector).next().unwrap();
+
+    //parse the html response from the website
+
+    let html = reqwest::get("https://google.com")
         .await?
-        .json::<HashMap<String, String>>()
+        .text()
         .await?;
-    println!("--->{resp:#?}");
 
-
-    //add a new movie to the collection with the ip address
-    let ip = resp.get("origin").unwrap();
-    println!("ip address: {}", ip);
-
-            let html = r#"
-            <!DOCTYPE html>
-            <meta charset="utf-8">
-            <title>Hello, world!</title>
-            <h1 class="foo">Hello, <i>world!</i></h1>
-        "#;
-
-    let selector = Selector::parse("h1.foo").unwrap();
-
-    let document = Html::parse_document(html);
-
-    let h1 = document.select(&selector).next().unwrap();
-
+    let soup = soup::Soup::new(&html);
     
-    println!("{:#?} --->", h1.text().collect::<String>());
-    println!("{:#?}", document);
+    println!("{:#?}", html);
+    println!("{:#?}", soup);
 
     Ok(())
 }
