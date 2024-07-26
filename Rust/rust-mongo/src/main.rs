@@ -6,6 +6,9 @@ use mongodb::{
 use std::env;
 use std::collections::HashMap;
 
+extern crate reqwest;
+extern crate soup;
+
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
