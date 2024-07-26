@@ -1,0 +1,10 @@
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/rust-mongo/target/debug/deps/librand_jitter-2329e76d1b5fe9fa.rmeta: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/dummy_log.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/platform.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/error.rs
+
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/rust-mongo/target/debug/deps/librand_jitter-2329e76d1b5fe9fa.rlib: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/dummy_log.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/platform.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/error.rs
+
+/Users/arthursantos/Desktop/learning/ruby/database-benchmark/Rust/rust-mongo/target/debug/deps/rand_jitter-2329e76d1b5fe9fa.d: /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/lib.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/dummy_log.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/platform.rs /Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/error.rs
+
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/lib.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/dummy_log.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/platform.rs:
+/Users/arthursantos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/rand_jitter-0.1.4/src/error.rs:
